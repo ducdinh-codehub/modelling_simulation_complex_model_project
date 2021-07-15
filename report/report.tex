@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\title{Report Modelling And Simulation Complex Model 2021
+        \linebreak
+        \\Subject:  spread of COVID-19 in a city and control policy}
+
+\linebreak\author{
+        Author: Duc Dinh Anh 
+        \\Email:    ducda.m20ict@st.usth.edu.vn
+        \\Mobile:   (+84) 982 086 651}
+
+\date{July 2021}
+
+\lstdefinestyle{mystyle}{
+    numbers=left,                    
+    numbersep=5pt,     
+    tabsize=2,
+}
+\lstset{style=mystyle}
+
+\maketitle
+\begin{document}
+\newpage
+\section{Spread of the disease}
+In this section, we want to discover the evolution of virus, beside we can track the steps of infectious process to see how and why virus can spread.
+\\
+\\
+\underline{\textbf{#Model M1}}
+\\
+\underline{\emph{Strategy}}\\\\
+We build this model base on the SEIR strategy which following states:\\
+- S: \textbf{Susceptible}, meaning the individual can be infected,\\
+- E: \textbf{Exposed}, meaning that the individual has been infected, nut cannot be infected other individuals,\\
+- I: \textbf{Infectious}, meaning that the individual has been infected and can infect other individuals,\\
+- R: \textbf{Recovered}, meaning that the individual has recovered from disease and cannot be infected anymore.\\\\
+- \textbf{*Note}: S individual will be infected by I individual. E will become I from three to seven day and I will become R from seven to ten day.
+\\\\
+\underline{\emph{Requirement}}\\
+- Implement population of species "Individuals" with an attribute for each epidemic state.\\
+- Each individual are moving randomly by using wander skill which is built in method of GAMA.\\ 
+- At each state, I individual infects one of S individual.\\
+- Create mechanism that allow E individuals automatically change their  states to I.(Following the duration)\\
+- Create mechanism that allow I individuals automatically change their  states to R.(Following the duration)\\
+- Displaying each individual with a circle and a colour depends on their state.\\
+- Creates 500 individuals and one infected individual in population, plot number of species in each states.\\\\
+
+\underline{\emph{Result}}\\
+\begin{lstlisting}
+global{	
+	int number_of_people <- 500;
+	int number_of_infected_people <- 1;
+	float dangerous_distance <- 0.5#m;
+	int pandemic_duration <- 0;
+	init{
+		create individuals number: number_of_people;
+		loop i from: 0 to: number_of_infected_people - 1{
+			ask one_of(individuals){
+				is_infected <- true;
+				my_color <- #yellow;
+				epidemic_state <- "E";
+				count_date_expose <- 1;
+			}
+		}
+	}
+}
+\end{lstlisting}
+- In the global agent I create some attributes to calibrate the parameter of model and there are:
+\\- number\_of\_people: allow me to add more individual.
+\\- number\_of\_infected\_people: allow me to add infected people.
+\\- pandemic\_duration: counting the date of pandemic duration.
+\\- dangerous\_distance: Is the perfect distance for virus go inside susceptible individual.
+\begin{lstlisting}
+species individuals skills:[moving]{
+	bool is_infected <- false;
+	string epidemic_state <- "S";
+	rgb my_color <- #blue;
+	int count_date_expose <- 0;
+	int count_date_infectious <- 0;
+	
+	reflex move{
+		do wander speed: 1.0;
+	}
+	
+	//Expose to infectious
+	reflex dynamicTurnBad when:(count_date_expose >= 72) and (count_date_expose <= 240) and (epidemic_state = "E"){
+		write "Change bad state";
+		epidemic_state <- "I";
+		is_infected <- true;
+		my_color <- #red;
+		count_date_infectious <- count_date_expose + 1;
+	}
+	
+	//Infectious to recovery
+	reflex dynamicTurnGood when: (count_date_infectious >= 240) and (count_date_infectious <= 720) and (epidemic_state = "I"){
+		write "Change good state";
+		epidemic_state <- "R";
+		is_infected <- false;
+		my_color <- #green;
+		count_date_expose <- 0;
+		count_date_infectious <- 0;
+	}
+
+	reflex infect when:(epidemic_state = "I"){
+		ask individuals at_distance 3.0 {
+			if (self.epidemic_state = "S"){
+				self.is_infected <- true;
+				self.epidemic_state <- "E";
+				self.my_color <- #yellow;
+			}
+		}
+	}
+	//Counter of expose duration
+	// one day is 24 hour -> 3 days is 72 hour
+	// one day is 24 hour -> 10 days is 240 hour
+	// one day is 24 hour -> 30 days is 720 hour
+	reflex increaseExposeDate when: epidemic_state = "E"{
+		if(count_date_expose = 240){
+			count_date_expose <- 0;
+		}
+		if(cycle mod 60 = 0 and cycle != 0){
+			count_date_expose <- count_date_expose + 1;
+		}
+	}
+	
+	reflex increaseInfectiousDate when: epidemic_state = "I"{
+		if(count_date_infectious = 720){
+			count_date_infectious <- 0;
+		}
+		if(cycle mod 60 = 0 and cycle != 0){
+			count_date_infectious <- count_date_infectious + 1;
+		}
+		pandemic_duration <- count_date_infectious;
+	}
+	
+	aspect infor{
+		draw circle(0.5) color: my_color;
+	}
+}
+\end{lstlisting}
+- In the individual agent I create some attributes to contain the value that can control the model follows my scenario:
+\\- is\_infected: separating people who is infected or not infected.
+\\- epidemic\_state: point out the state of each individual.
+\\-	my\_color: color of each individual which can be decided by it's state.
+\\-	count\_date\_expose: counting the E duration of each individual.
+\\- count\_date\_infectious: counting the I duration of each individual.
+\\\\
+- This agent have five actions an each action have their own function base on the requirement.
+\\- "reflex infect": This action allows individual infects for susceptible individual. In this action, I will pick one Infectious individual and use this one to find the other individuals which has the same distance with the value of dangerous\_distance variable.
+\\- "reflex dynamicTurnBad" and "reflex increaseExposeDate": These two actions connect to each other, the second action counts the date when an individual stays in E state, and it will automatically change to I state when the condition of the first action satisfies, that means the state of individual will remain at E until it meets the end of the duration after that it will become I state.
+\\- "reflex dynamicTurnGood" and "reflex increaseInfectiousDate": These two actions connect to each other, the second action counts the date when an individual stays in I state, and it will automatically change to R state when the condition of the first action satisfies, that means the state of an individual will remain at I until it meets the end of the duration after that it will become R state.
+
+
+
+\underline{\emph{Exploration}}
+
+
+\section{Spread in a city with a heterogeneous population}
+
+\section{Public health policy}
+\end{document}
+
+
+
+

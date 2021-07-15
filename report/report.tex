@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {/home/duc/Pictures/} }
 \title{Report Modelling And Simulation Complex Model 2021
         \linebreak
         \\Subject:  spread of COVID-19 in a city and control policy}
@@ -66,10 +68,14 @@ global{
 }
 \end{lstlisting}
 - In the global agent I create some attributes to calibrate the parameter of model and there are:
-\\- number\_of\_people: allow me to add more individual.
-\\- number\_of\_infected\_people: allow me to add infected people.
-\\- pandemic\_duration: counting the date of pandemic duration.
-\\- dangerous\_distance: Is the perfect distance for virus go inside susceptible individual.
+\\
+- number\_of\_people: allow me to add more individual.
+\\
+- number\_of\_infected\_people: allow me to add infected people.
+\\
+- pandemic\_duration: counting the date of pandemic duration.
+\\
+- dangerous\_distance: Is the perfect distance for virus go inside susceptible individual.
 \begin{lstlisting}
 species individuals skills:[moving]{
 	bool is_infected <- false;
@@ -139,21 +145,159 @@ species individuals skills:[moving]{
 }
 \end{lstlisting}
 - In the individual agent I create some attributes to contain the value that can control the model follows my scenario:
-\\- is\_infected: separating people who is infected or not infected.
-\\- epidemic\_state: point out the state of each individual.
-\\-	my\_color: color of each individual which can be decided by it's state.
-\\-	count\_date\_expose: counting the E duration of each individual.
-\\- count\_date\_infectious: counting the I duration of each individual.
+\\
+- is\_infected: separating people who is infected or not infected.
+\\
+- epidemic\_state: point out the state of each individual.
+\\
+-	my\_color: color of each individual which can be decided by it's state.
+\\
+-	count\_date\_expose: counting the E duration of each individual.
+\\
+- count\_date\_infectious: counting the I duration of each individual.
 \\\\
 - This agent have five actions an each action have their own function base on the requirement.
-\\- "reflex infect": This action allows individual infects for susceptible individual. In this action, I will pick one Infectious individual and use this one to find the other individuals which has the same distance with the value of dangerous\_distance variable.
-\\- "reflex dynamicTurnBad" and "reflex increaseExposeDate": These two actions connect to each other, the second action counts the date when an individual stays in E state, and it will automatically change to I state when the condition of the first action satisfies, that means the state of individual will remain at E until it meets the end of the duration after that it will become I state.
-\\- "reflex dynamicTurnGood" and "reflex increaseInfectiousDate": These two actions connect to each other, the second action counts the date when an individual stays in I state, and it will automatically change to R state when the condition of the first action satisfies, that means the state of an individual will remain at I until it meets the end of the duration after that it will become R state.
-
-
-
+\\
+- "reflex infect": This action allows individual infects for susceptible individual. In this action, I will pick one Infectious individual and use this one to find the other individuals which has the same distance with the value of dangerous\_distance variable.
+\\
+- "reflex dynamicTurnBad" and "reflex increaseExposeDate": These two actions connect to each other, the second action counts the date when an individual stays in E state, and it will automatically change to I state when the condition of the first action satisfies, that means the state of individual will remain at E until it meets the end of the duration after that it will become I state.
+\\
+- "reflex dynamicTurnGood" and "reflex increaseInfectiousDate": These two actions connect to each other, the second action counts the date when an individual stays in I state, and it will automatically change to R state when the condition of the first action satisfies, that means the state of an individual will remain at I until it meets the end of the duration after that it will become R state.
+\\
+\includegraphics[width=0.95\textwidth]{complex_project_1}
+\\
+\caption{Figure 1: Simulation of model M1\_1, following the requirement 1 infected individual and 500 susceptible individuals.}
+\\
+\includegraphics[width=0.76\textwidth]{complex_project_2}
+\\
+\caption{Figure 2: Simulation of model M1\_1, after three days E individual turn to state I and start spreading desease to other individuals.}
+\\
+\includegraphics[width=0.73\textwidth]{complex_project_3}
+\\
+\caption{Figure 3: Simulation of model M1\_1, all E individuals change to I state.}
+\\
+\includegraphics[width=0.75\textwidth]{complex_project_4}
+\\
+\caption{Figure 4: Simulation of model M1\_1, all E individuals become infected individual.}
+\\
+\includegraphics[width=0.76\textwidth]{complex_project_5}
+\\
+\caption{Figure 5: Simulation of model M1\_1, all I individuals gradually chage to recovery individual.}
+\\
+\includegraphics[width=0.76\textwidth]{complex_project_6}
+\\
+\caption{Figure 6: Simulation of model M1\_1, number of individuals who have I state increase very fast.}
+\newpage
 \underline{\emph{Exploration}}
+\\
+\textbf{Exploration E1.1. Effect of randomness:}
+\\
+Define a gui experiment, creating 10 experiments (with different seed values) and plot the evolution of the number of I individuals for each simulation.
+\\
+\lstdefinestyle{mystyle2}{
+    numbers=left,                    
+    numbersep=5pt,     
+}
+\lstset{style=mystyle2}
+\begin{lstlisting}
+experiment E1_1 type: gui{
+	parameter "Number of people: " var: number_of_people min:10 
+	max: 1000 step: 10;
+	parameter "Number of infected people: " 
+	var: number_of_infected_people min: 1 max: 50 step: 10;
+	init{
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::1];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::2];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::3];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::4];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::5];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::6];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::7];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::8];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::9];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::10];
+	}
+	output{
+		display E1_1{
+			chart "Ch" type:series{
+				datalist ["#S", "#E", "#I", "#R"] 
+				value: [individuals count (each.epidemic_state = "S"), 		
+				individuals count (each.epidemic_state = "I"),			
+				individuals count (each.epidemic_state = "E"), 				
+				individuals count (each.epidemic_state = "R")] 
+				color: [#blue, #yellow, #red, #green]; 			  
+			}
+		}
+	}
+}
+\end{lstlisting}
 
+- I design an experiment that can simulate ten simulations one time, and each simulation have different seed like the requirement. In this experiment I want to discover the evolution of each state base on the number of individual.
+\\\\
+\includegraphics[width=0.90\textwidth]{complex_project_7}
+\\
+\caption{Figure 7: Exploration E1\_1, ten experiments.}
+\\\\
+\includegraphics[width=0.90\textwidth]{complex_project_8}
+\\
+\caption{Figure 8: Exploration E1\_1, E cases increase, S cases decrease.}
+\\
+\includegraphics[width=0.90\textwidth]{complex_project_9}
+\\
+\caption{Figure 9: Exploration E1\_1, I cases appear.}
+\\
+\textbf{Exploration E1.2. Impact of the number of individuals.}
+Define a gui experiment, creating 11 experiments, with the same seed value but with a number of individuals from 200 to 2000 (with a step of 200) and plot the evolution of the number of I individuals.
+\begin{lstlisting}
+experiment E1_2 type: gui{
+	parameter "Number of people: " 
+	var: number_of_people min:200 max: 2000 step: 200;
+	parameter "Number of infected people: " 
+	var: number_of_infected_people min: 1 max: 50 step: 10;
+	
+	init{
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,seed::seed];
+	}
+	output{
+		display E1_2{
+			chart "Ch" type:series{
+				datalist ["#S", "#E", "#I", "#R"] 
+				value: [individuals count (each.epidemic_state = "S"), 					individuals count (each.epidemic_state = "E"),  					individuals count (each.epidemic_state = "I"), 				individuals count (each.epidemic_state = "R")] 		  					color: [#blue, #yellow, #red, #green];
+			}
+		}
+		
+	}
+}
+\end{lstlisting}
 
 \section{Spread in a city with a heterogeneous population}
 

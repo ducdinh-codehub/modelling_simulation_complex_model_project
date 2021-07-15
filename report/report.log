@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  15 JUL 2021 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  16 JUL 2021 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -57,6 +57,26 @@ File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
 
 ! LaTeX Error: There's no line here to end.
 
@@ -64,8 +84,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 \linebreak\author
-                     {
+l.10 \linebreak\author
+                      {
 ? 
 
 ! LaTeX Error: Missing \begin{document}.
@@ -74,155 +94,581 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \maketitle
+l.24 \maketitle
                
 ? 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 24.
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count183
 \l__pdf_internal_box=\box47
 )
-No file report.aux.
+(./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 \c@lstlisting=\count184
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count185
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count186
+\nofMParguments=\count187
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count188
+\MPscratchDim=\dimen142
+\MPnumerator=\count189
+\makeMPintoPDFobject=\count190
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 31.
 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    M
-l.29 \underline{\textbf{#Model M1}}
+l.31 \underline{\textbf{#Model M1}}
                                    
 ? 
 ! Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.29 \underline{\textbf{#Model M1}}
+l.31 \underline{\textbf{#Model M1}}
                                    
 ? 
 ! You can't use `macro parameter character #' in restricted horizontal mode.
 <recently read> ##
                   
-l.29 \underline{\textbf{#Model M1}}
+l.31 \underline{\textbf{#Model M1}}
                                    
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--47
+Underfull \hbox (badness 10000) in paragraph at lines 28--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-0.
+2.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5
-1.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 53.
  [2]
-Overfull \hbox (333.0069pt too wide) in paragraph at lines 86--87
+Overfull \hbox (333.0069pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (399.00757pt too wide) in paragraph at lines 95--96
+Overfull \hbox (399.00757pt too wide) in paragraph at lines 101--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [3]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 126--127
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 132--133
 [][][][][][][][][][][][][][][][][][] 
  []
 
+</home/duc/Pictures/complex_project_1.png, id=20, 652.68843pt x 640.64343pt>
+File: /home/duc/Pictures/complex_project_1.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_1.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_1.png  used on inpu
+t line 167.
+(pdftex.def)             Requested size: 327.74895pt x 321.70903pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--152
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \caption
+              {Figure 1: Simulation of model M1\_1, following the requiremen...
+
+? 
+</home/duc/Pictures/complex_project_2.png, id=21, 668.4975pt x 639.89063pt>
+File: /home/duc/Pictures/complex_project_2.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_2.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_2.png  used on inpu
+t line 171.
+(pdftex.def)             Requested size: 262.1981pt x 250.98187pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173 \caption
+              {Figure 2: Simulation of model M1\_1, after three days E indiv...
+
+? 
+</home/duc/Pictures/complex_project_3.png, id=22, 648.17157pt x 639.13782pt>
+File: /home/duc/Pictures/complex_project_3.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_3.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_3.png  used on inpu
+t line 175.
+(pdftex.def)             Requested size: 251.84853pt x 248.33626pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \caption
+              {Figure 3: Simulation of model M1\_1, all E individuals change...
+
+? 
+</home/duc/Pictures/complex_project_4.png, id=23, 666.99188pt x 641.39626pt>
+File: /home/duc/Pictures/complex_project_4.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_4.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_4.png  used on inpu
+t line 179.
+(pdftex.def)             Requested size: 258.75pt x 248.8223pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 \caption
+              {Figure 4: Simulation of model M1\_1, all E individuals become...
+
+? 
+</home/duc/Pictures/complex_project_5.png, id=24, 663.22781pt x 636.87938pt>
+File: /home/duc/Pictures/complex_project_5.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_5.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_5.png  used on inpu
+t line 183.
+(pdftex.def)             Requested size: 262.1981pt x 251.78325pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \caption
+              {Figure 5: Simulation of model M1\_1, all I individuals gradua...
+
+? 
+</home/duc/Pictures/complex_project_6.png, id=25, 673.01437pt x 639.13782pt>
+File: /home/duc/Pictures/complex_project_6.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_6.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_6.png  used on inpu
+t line 187.
+(pdftex.def)             Requested size: 262.1981pt x 248.99944pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \caption
+              {Figure 6: Simulation of model M1\_1, number of individuals wh...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--190
 
  []
 
-[4] [5] (./report.aux) ) 
+[4] [5 </home/duc/Pictures/complex_project_1.png (PNG copy)>] [6 </home/duc/Pic
+tures/complex_project_2.png (PNG copy)> </home/duc/Pictures/complex_project_3.p
+ng (PNG copy)>] [7 </home/duc/Pictures/complex_project_4.png (PNG copy)> </home
+/duc/Pictures/complex_project_5.png (PNG copy)>] [8 </home/duc/Pictures/complex
+_project_6.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 191--202
+
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 204--205
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 209--210
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 210--211
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 211--212
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 212--213
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 213--214
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 214--215
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 215--216
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 216--217
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 217--218
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 218--219
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 219--220
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 220--221
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 221--222
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 222--223
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 223--224
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 224--225
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 225--226
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 227--228
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 228--229
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.004pt too wide) in paragraph at lines 234--235
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00362pt too wide) in paragraph at lines 235--236
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00372pt too wide) in paragraph at lines 236--237
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+</home/duc/Pictures/complex_project_7.png, id=42, 971.88094pt x 690.32906pt>
+File: /home/duc/Pictures/complex_project_7.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_7.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_7.png  used on inpu
+t line 247.
+(pdftex.def)             Requested size: 310.4979pt x 220.54114pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.249 \caption
+              {Figure 7: Exploration E1\_1, ten experiments.}
+? 
+</home/duc/Pictures/complex_project_8.png, id=43, 951.555pt x 632.3625pt>
+File: /home/duc/Pictures/complex_project_8.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_8.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_8.png  used on inpu
+t line 251.
+(pdftex.def)             Requested size: 310.4979pt x 206.3452pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 \caption
+              {Figure 8: Exploration E1\_1, E cases increase, S cases decrea...
+
+? 
+</home/duc/Pictures/complex_project_9.png, id=44, 956.07187pt x 611.28375pt>
+File: /home/duc/Pictures/complex_project_9.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_9.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_9.png  used on inpu
+t line 255.
+(pdftex.def)             Requested size: 310.4979pt x 198.51563pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.257 \caption
+              {Figure 9: Exploration E1\_1, I cases appear.}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--261
+
+ []
+
+[9] [10 </home/duc/Pictures/complex_project_7.png (PNG copy)> </home/duc/Pictur
+es/complex_project_8.png (PNG copy)>]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 269--270
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 270--271
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 271--272
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 272--273
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 273--274
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 274--275
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 275--276
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 276--277
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 277--278
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 278--279
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 279--280
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 280--281
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 281--282
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 282--283
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 283--284
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 284--285
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 285--286
+[][][][][][][][][][][][][][] 
+ []
+
+[11 </home/duc/Pictures/complex_project_9.png (PNG copy)>]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 286--287
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 287--288
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 288--289
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (435.00778pt too wide) in paragraph at lines 294--295
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][]
+ []
+
+
+Overfull \hbox (351.00691pt too wide) in paragraph at lines 294--295
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][]
+ []
+
+[12] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2079 strings out of 483140
- 28890 string characters out of 5965152
- 276126 words of memory out of 5000000
- 17149 multiletter control sequences out of 15000+600000
+ 2885 strings out of 483140
+ 41146 string characters out of 5965152
+ 299225 words of memory out of 5000000
+ 17922 multiletter control sequences out of 15000+600000
  536632 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 28i,6n,36p,413b,1507s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (5 pages, 111666 bytes).
+ 30i,6n,36p,411b,1507s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (12 pages, 668726 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

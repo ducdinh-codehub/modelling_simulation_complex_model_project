@@ -21,6 +21,8 @@ global{
 	float dangerous_distance <- 0.5#m;
 	int pandemic_duration <- 0;
 	int number_people_infected <- 0;
+	int start_pandemic_date <-0;
+	int end_pandemic_date <- 0;
 	init{
 		//create buildings from: buildings0_shape_file with: [height_building::int(rnd(10,29))];
 		create individuals number: number_of_people;
@@ -65,6 +67,28 @@ species individuals skills:[moving]{
 		count_date_expose <- 0;
 		count_date_infectious <- 0;
 	}
+	
+	reflex check_epidemic_duration when: epidemic_state = "I"{
+		int count_infect_plp <- individuals count (each.epidemic_state = "I");
+		if(count_infect_plp = 1){
+			start_pandemic_date <- current_date.day;
+			write "start_pandemic_date: " + start_pandemic_date;
+		}
+		
+		if(count_infect_plp = 0){
+			end_pandemic_date <- current_date.day;
+			write "end_pandemic_date: " + end_pandemic_date;
+			pandemic_duration <- abs(end_pandemic_date - start_pandemic_date);
+		}
+		
+		/* 
+		if(count_infect_plp != 0){
+			//end_pandemic_date <- current_date.day;
+			//pandemic_duration <- abs(end_pandemic_date - start_pandemic_date);
+			pandemic_duration <- pandemic_duration + 1;
+		}*/
+	}
+	
 
 	reflex infect when:(epidemic_state = "I"){
 		ask individuals at_distance 3.0 {
@@ -97,8 +121,10 @@ species individuals skills:[moving]{
 		if(cycle mod 60 = 0 and cycle != 0){
 			count_date_infectious <- count_date_infectious + 1;
 		}
-		pandemic_duration <- count_date_infectious;
+		
 	}
+	
+	
 	
 	aspect infor{
 		draw circle(0.5) color: my_color;

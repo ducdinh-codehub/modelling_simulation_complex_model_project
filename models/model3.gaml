@@ -417,6 +417,13 @@ experiment M2_3{
 			species roads aspect: goem;
 			species inhabitants aspect: goem;
 		}
+		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+	}
+}
+experiment E2_2{
+	output{
 		display Population_gender {
 			chart "Population gender" type: histogram {
 				datalist ["Male", "Female"] value:[length(inhabitants where(each.my_gender="male")), length(inhabitants where(each.my_gender="female"))];
@@ -434,6 +441,15 @@ experiment M2_3{
 			}
 		}
 		
+		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		
+	}
+}
+
+experiment E2_3{
+	output{
 		display Epidemic_plotting {
 			chart "States of the agents" type: series style: line {
 				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.is_susceptible_state = true), inhabitants count (each.is_exposed_state = true), 
@@ -441,10 +457,10 @@ experiment M2_3{
 												  color: [#blue, #gold, #red, #lightblue];
 			}
 		}
-		
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
 		
 	}
 }

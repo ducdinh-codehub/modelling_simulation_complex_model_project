@@ -571,12 +571,20 @@ species virus skills:[moving]{
 }
 
 species local_authority{
-	reflex searchPolicy{
-		if(inhabitants count(each.is_infected_state = true) > 1){  
+	int count_policy_date <- 0;
+	reflex checkPolicyDate when: law != nil{
+		if(count_policy_date >= 72){
+			law <- nil;
+		}
+	}
+	reflex searchPolicy when: law = nil and inhabitants count(each.is_infected_state = true) > 1 {
+		//if(inhabitants count(each.is_infected_state = true) > 1){  
 		// Promulgate law 
 		//when authority find infectious case in environment
-			law <- "wearmask";
-		}
+		ask one_of(policies){
+				law <- self.policy;
+			}
+		//}
 		if (law = "wearmask"){
 			infect_prop <- 0.5;
 		}
@@ -587,6 +595,14 @@ species local_authority{
 		ask one_of(policies){
 			law <- self.policy;
 		}*/
+	}
+	reflex increasePolicyDuration{
+		if(count_policy_date = 72){
+			count_policy_date <- 0;
+		}
+		if(cycle mod 60 = 0 and cycle != 0){
+			count_policy_date <- count_policy_date + 1;
+		}
 	}
 }
 

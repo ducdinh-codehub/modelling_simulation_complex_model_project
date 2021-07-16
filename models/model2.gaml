@@ -439,7 +439,7 @@ experiment M2_2{
 	}
 }
 
-experiment E1_1 type: gui{
+experiment E2_1 type: gui{
 	parameter "Number of people: " var: number_of_inhabitant min:10 max: 1000 step: 10;
 	parameter "Number of infected people: " var: number_people_infected min: 5 max: 50 step: 10;
 	

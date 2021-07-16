@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  16 JUL 2021 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  17 JUL 2021 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -226,17 +226,22 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 53.
  [2]
-Overfull \hbox (333.0069pt too wide) in paragraph at lines 92--93
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 93--94
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (399.00757pt too wide) in paragraph at lines 101--102
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 102--103
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 103--104
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [3]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 132--133
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 134--135
 [][][][][][][][][][][][][][][][][][] 
  []
 
@@ -244,8 +249,8 @@ Overfull \hbox (9.0036pt too wide) in paragraph at lines 132--133
 File: /home/duc/Pictures/complex_project_1.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_1.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_1.png  used on inpu
-t line 167.
-(pdftex.def)             Requested size: 327.74895pt x 321.70903pt.
+t line 169.
+(pdftex.def)             Requested size: 276.00105pt x 270.91595pt.
 
 ! LaTeX Error: \caption outside float.
 
@@ -253,16 +258,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \caption
+l.171 \caption
               {Figure 1: Simulation of model M1\_1, following the requiremen...
 
 ? 
-</home/duc/Pictures/complex_project_2.png, id=21, 668.4975pt x 639.89063pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--172
+
+ []
+
+[4]
+</home/duc/Pictures/complex_project_2.png, id=24, 668.4975pt x 639.89063pt>
 File: /home/duc/Pictures/complex_project_2.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_2.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_2.png  used on inpu
-t line 171.
+t line 173.
 (pdftex.def)             Requested size: 262.1981pt x 250.98187pt.
+
 
 ! LaTeX Error: \caption outside float.
 
@@ -270,15 +282,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \caption
+l.175 \caption
               {Figure 2: Simulation of model M1\_1, after three days E indiv...
 
 ? 
-</home/duc/Pictures/complex_project_3.png, id=22, 648.17157pt x 639.13782pt>
+</home/duc/Pictures/complex_project_3.png, id=25, 648.17157pt x 639.13782pt>
 File: /home/duc/Pictures/complex_project_3.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_3.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_3.png  used on inpu
-t line 175.
+t line 177.
 (pdftex.def)             Requested size: 251.84853pt x 248.33626pt.
 
 ! LaTeX Error: \caption outside float.
@@ -287,15 +299,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 \caption
+l.179 \caption
               {Figure 3: Simulation of model M1\_1, all E individuals change...
 
 ? 
-</home/duc/Pictures/complex_project_4.png, id=23, 666.99188pt x 641.39626pt>
+</home/duc/Pictures/complex_project_4.png, id=26, 666.99188pt x 641.39626pt>
 File: /home/duc/Pictures/complex_project_4.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_4.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_4.png  used on inpu
-t line 179.
+t line 181.
 (pdftex.def)             Requested size: 258.75pt x 248.8223pt.
 
 ! LaTeX Error: \caption outside float.
@@ -304,15 +316,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \caption
+l.183 \caption
               {Figure 4: Simulation of model M1\_1, all E individuals become...
 
 ? 
-</home/duc/Pictures/complex_project_5.png, id=24, 663.22781pt x 636.87938pt>
+</home/duc/Pictures/complex_project_5.png, id=27, 663.22781pt x 636.87938pt>
 File: /home/duc/Pictures/complex_project_5.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_5.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_5.png  used on inpu
-t line 183.
+t line 185.
 (pdftex.def)             Requested size: 262.1981pt x 251.78325pt.
 
 ! LaTeX Error: \caption outside float.
@@ -321,15 +333,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \caption
+l.187 \caption
               {Figure 5: Simulation of model M1\_1, all I individuals gradua...
 
 ? 
-</home/duc/Pictures/complex_project_6.png, id=25, 673.01437pt x 639.13782pt>
+</home/duc/Pictures/complex_project_6.png, id=28, 673.01437pt x 639.13782pt>
 File: /home/duc/Pictures/complex_project_6.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_6.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_6.png  used on inpu
-t line 187.
+t line 189.
 (pdftex.def)             Requested size: 262.1981pt x 248.99944pt.
 
 ! LaTeX Error: \caption outside float.
@@ -338,37 +350,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 \caption
+l.191 \caption
               {Figure 6: Simulation of model M1\_1, number of individuals wh...
 
 ? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--190
-
- []
-
-[4] [5 </home/duc/Pictures/complex_project_1.png (PNG copy)>] [6 </home/duc/Pic
-tures/complex_project_2.png (PNG copy)> </home/duc/Pictures/complex_project_3.p
-ng (PNG copy)>] [7 </home/duc/Pictures/complex_project_4.png (PNG copy)> </home
-/duc/Pictures/complex_project_5.png (PNG copy)>] [8 </home/duc/Pictures/complex
-_project_6.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--202
+[5 </home/duc/Pictures/complex_project_1.png (PNG copy)>] [6 </home/duc/Picture
+s/complex_project_2.png (PNG copy)> </home/duc/Pictures/complex_project_3.png (
+PNG copy)>] [7 </home/duc/Pictures/complex_project_4.png (PNG copy)> </home/duc
+/Pictures/complex_project_5.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--204
 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 204--205
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 206--207
 [][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 209--210
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 210--211
-[][][][][][][][][][] 
  []
 
 
@@ -431,7 +427,7 @@ Overfull \hbox (51.00403pt too wide) in paragraph at lines 222--223
 [][][][][][][][][][] 
  []
 
-
+[8 </home/duc/Pictures/complex_project_6.png (PNG copy)>]
 Overfull \hbox (33.00385pt too wide) in paragraph at lines 223--224
 [][][][][][][][][][][][][][] 
  []
@@ -457,22 +453,32 @@ Overfull \hbox (33.00385pt too wide) in paragraph at lines 227--228
  []
 
 
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 228--229
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 228--229
 [][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.004pt too wide) in paragraph at lines 234--235
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 229--230
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 230--231
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.004pt too wide) in paragraph at lines 236--237
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00362pt too wide) in paragraph at lines 235--236
+Overfull \hbox (15.00362pt too wide) in paragraph at lines 237--238
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.00372pt too wide) in paragraph at lines 236--237
+Overfull \hbox (27.00372pt too wide) in paragraph at lines 238--239
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -480,7 +486,7 @@ Overfull \hbox (27.00372pt too wide) in paragraph at lines 236--237
 File: /home/duc/Pictures/complex_project_7.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_7.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_7.png  used on inpu
-t line 247.
+t line 249.
 (pdftex.def)             Requested size: 310.4979pt x 220.54114pt.
 
 ! LaTeX Error: \caption outside float.
@@ -489,14 +495,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 \caption
+l.251 \caption
               {Figure 7: Exploration E1\_1, ten experiments.}
 ? 
 </home/duc/Pictures/complex_project_8.png, id=43, 951.555pt x 632.3625pt>
 File: /home/duc/Pictures/complex_project_8.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_8.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_8.png  used on inpu
-t line 251.
+t line 253.
 (pdftex.def)             Requested size: 310.4979pt x 206.3452pt.
 
 ! LaTeX Error: \caption outside float.
@@ -505,7 +511,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 \caption
+l.255 \caption
               {Figure 8: Exploration E1\_1, E cases increase, S cases decrea...
 
 ? 
@@ -513,7 +519,7 @@ l.253 \caption
 File: /home/duc/Pictures/complex_project_9.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_9.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_9.png  used on inpu
-t line 255.
+t line 257.
 (pdftex.def)             Requested size: 310.4979pt x 198.51563pt.
 
 ! LaTeX Error: \caption outside float.
@@ -522,31 +528,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 \caption
+l.259 \caption
               {Figure 9: Exploration E1\_1, I cases appear.}
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--261
+Underfull \hbox (badness 10000) in paragraph at lines 247--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--261
+Underfull \hbox (badness 10000) in paragraph at lines 247--263
 
  []
 
-[9] [10 </home/duc/Pictures/complex_project_7.png (PNG copy)> </home/duc/Pictur
-es/complex_project_8.png (PNG copy)>]
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 269--270
-[][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (69.00421pt too wide) in paragraph at lines 270--271
-[][][][][][][][][][][][] 
- []
-
-
+[9 </home/duc/Pictures/complex_project_7.png (PNG copy)>] [10 </home/duc/Pictur
+es/complex_project_8.png (PNG copy)> </home/duc/Pictures/complex_project_9.png 
+(PNG copy)>]
 Overfull \hbox (33.00385pt too wide) in paragraph at lines 271--272
 [][][][][][][][][][][][][][] 
  []
@@ -621,7 +618,7 @@ Overfull \hbox (33.00385pt too wide) in paragraph at lines 285--286
 [][][][][][][][][][][][][][] 
  []
 
-[11 </home/duc/Pictures/complex_project_9.png (PNG copy)>]
+
 Overfull \hbox (69.00421pt too wide) in paragraph at lines 286--287
 [][][][][][][][][][][][] 
  []
@@ -637,38 +634,898 @@ Overfull \hbox (69.00421pt too wide) in paragraph at lines 288--289
  []
 
 
-Overfull \hbox (435.00778pt too wide) in paragraph at lines 294--295
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 289--290
+[][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (351.00691pt too wide) in paragraph at lines 294--295
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][]
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 290--291
+[][][][][][][][][][][][] 
  []
 
-[12] (./report.aux) ) 
+
+Overfull \hbox (87.00432pt too wide) in paragraph at lines 296--297
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00395pt too wide) in paragraph at lines 297--298
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.00372pt too wide) in paragraph at lines 298--299
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.00417pt too wide) in paragraph at lines 299--300
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.308 \\-
+          I create 11 experiments which use the same seed and each experimen...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 \includegraphics
+                      [width=0.90\textwidth]{complex_project_10}
+? 
+</home/duc/Pictures/complex_project_10.png, id=51, 951.555pt x 692.5875pt>
+File: /home/duc/Pictures/complex_project_10.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_10.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_10.png  used on inp
+ut line 311.
+(pdftex.def)             Requested size: 310.4979pt x 225.99712pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \caption
+              {Figure 10: Exploration E1\_2, eleven experiments use the same...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
+
+ []
+
+[11]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 325--326
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 333--334
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 \\-
+          In this model, we will simulate the process of spreading desease i...
+
+? 
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   M
+l.346 \underline{\textbf{#Model M2}}
+                                    
+? 
+! Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.346 \underline{\textbf{#Model M2}}
+                                    
+? 
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.346 \underline{\textbf{#Model M2}}
+                                    
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--356
+
+ []
+
+[12 </home/duc/Pictures/complex_project_10.png (PNG copy)>]
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 358--359
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (147.005pt too wide) in paragraph at lines 359--360
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[13]
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 402--403
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 412--413
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 424--425
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 426--427
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 435--436
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 437--438
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 446--447
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 448--449
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 457--458
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (123.00476pt too wide) in paragraph at lines 459--460
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 468--469
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (183.00537pt too wide) in paragraph at lines 478--479
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 479--480
+[][][][][][][][][][] 
+ []
+
+[15]
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 514--515
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 515--516
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 516--517
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 517--518
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 518--519
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (69.00421pt too wide) in paragraph at lines 519--521
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 524--525
+[][][][][][][][][][][][] 
+ []
+
+[16]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537 \\-
+          "create inhabitants number\_of\_inhabitant", "create buildings fro...
+
+? 
+</home/duc/Pictures/complex_project_11.png, id=71, 914.66719pt x 635.37375pt>
+File: /home/duc/Pictures/complex_project_11.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_11.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_11.png  used on inp
+ut line 539.
+(pdftex.def)             Requested size: 310.4979pt x 215.68489pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.541 \caption
+              {Figure 11: Exploration M2\_1, the city after importing the sh...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--544
+
+ []
+
+[17 </home/duc/Pictures/complex_project_11.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 545.
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 546.
+
+Overfull \hbox (63.89929pt too wide) in paragraph at lines 546--547
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[18]
+Overfull \hbox (134.39917pt too wide) in paragraph at lines 596--597
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.8493pt too wide) in paragraph at lines 613--614
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[19]
+Overfull \hbox (14.54938pt too wide) in paragraph at lines 642--643
+[][][][][][][][][][][][][] 
+ []
+
+[20]
+Overfull \hbox (0.4494pt too wide) in paragraph at lines 678--679
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.8493pt too wide) in paragraph at lines 687--688
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.49939pt too wide) in paragraph at lines 694--695
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[21]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.706 \\-
+          Each inhabitants have their own calendar so they can move every lo...
+
+? 
+</home/duc/Pictures/complex_project_12.png, id=89, 813.79031pt x 609.77812pt>
+File: /home/duc/Pictures/complex_project_12.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_12.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_12.png  used on inp
+ut line 708.
+(pdftex.def)             Requested size: 241.49895pt x 180.95299pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.710 \caption
+              {Figure 12: Exploration M2\_1 + M2\_2, some individuals with p...
+
+? 
+</home/duc/Pictures/complex_project_13.png, id=90, 572.1375pt x 598.48593pt>
+File: /home/duc/Pictures/complex_project_13.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_13.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_13.png  used on inp
+ut line 712.
+(pdftex.def)             Requested size: 234.59747pt x 245.39908pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.714 \caption
+              {Figure 13: Exploration M2\_1 + M2\_2, all inhabitants stay wi...
+
+? 
+</home/duc/Pictures/complex_project_14.png, id=91, 579.66562pt x 526.21594pt>
+File: /home/duc/Pictures/complex_project_14.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_14.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_14.png  used on inp
+ut line 716.
+(pdftex.def)             Requested size: 234.59747pt x 212.96373pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.718 \caption
+              {Figure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants...
+
+? 
+</home/duc/Pictures/complex_project_15.png, id=92, 577.40718pt x 564.60938pt>
+File: /home/duc/Pictures/complex_project_15.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_15.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_15.png  used on inp
+ut line 720.
+(pdftex.def)             Requested size: 241.49895pt x 236.15218pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 \caption
+              {Figure 15: Exploration M2\_1 + M2\_2, all infected inhabitant...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 706--726
+
+ []
+
+[22 </home/duc/Pictures/complex_project_12.png (PNG copy)>] [23 </home/duc/Pict
+ures/complex_project_13.png (PNG copy)> </home/duc/Pictures/complex_project_14.
+png (PNG copy)>]
+Overfull \hbox (254.24896pt too wide) in paragraph at lines 728--729
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (317.69885pt too wide) in paragraph at lines 729--731
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 732--733
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 733--734
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 734--735
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 735--736
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 736--737
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 737--738
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 738--739
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 739--740
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 740--741
+[][][][][][][][][][][][][][] 
+ []
+
+[24 </home/duc/Pictures/complex_project_15.png (PNG copy)>]
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 741--742
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 742--743
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 743--744
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 744--745
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 745--746
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 746--747
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 747--748
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 748--749
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 749--750
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (155.54913pt too wide) in paragraph at lines 750--751
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (85.04926pt too wide) in paragraph at lines 751--752
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (331.79883pt too wide) in paragraph at lines 756--757
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (35.69934pt too wide) in paragraph at lines 757--758
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.69934pt too wide) in paragraph at lines 758--759
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.69934pt too wide) in paragraph at lines 759--760
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.767 \\\\
+          \\
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.767 \\\\\\
+            
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.768 \underline
+                {\textbf{#Model M2\_3}}\\
+? 
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   M
+l.768 \underline{\textbf{#Model M2\_3}}
+                                       \\
+? 
+! Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.768 \underline{\textbf{#Model M2\_3}}
+                                       \\
+? 
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.768 \underline{\textbf{#Model M2\_3}}
+                                       \\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--777
+
+ []
+
+[25]
+Overfull \hbox (99.14923pt too wide) in paragraph at lines 797--798
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.94928pt too wide) in paragraph at lines 799--800
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 801--802
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.806 \\-
+          I still use the source code of model M2\_1 and M2\_2 and the diffe...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--812
+
+ []
+
+
+Overfull \hbox (0.4494pt too wide) in paragraph at lines 816--817
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[26]
+Overfull \hbox (106.19922pt too wide) in paragraph at lines 818--819
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 819--820
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.4494pt too wide) in paragraph at lines 823--824
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.59937pt too wide) in paragraph at lines 824--825
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.59937pt too wide) in paragraph at lines 826--827
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (28.64935pt too wide) in paragraph at lines 828--829
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (28.64935pt too wide) in paragraph at lines 830--831
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.14923pt too wide) in paragraph at lines 836--837
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.94928pt too wide) in paragraph at lines 838--839
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 840--841
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844 \\-
+          In this exploration, the system will create gender histogram and a...
+
+? 
+</home/duc/Pictures/complex_project_17.png, id=110, 569.12625pt x 639.13782pt>
+File: /home/duc/Pictures/complex_project_17.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_17.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_17.png  used on inp
+ut line 846.
+(pdftex.def)             Requested size: 224.2479pt x 251.83739pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.848 \caption
+              {Figure 16: Exploration E2\_2, graph of gender.}
+? 
+</home/duc/Pictures/complex_project_16.png, id=111, 573.64313pt x 643.6547pt>
+File: /home/duc/Pictures/complex_project_16.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_16.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_16.png  used on inp
+ut line 850.
+(pdftex.def)             Requested size: 224.2479pt x 251.6136pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.852 \caption
+              {Figure 17: Exploration E2\_2, graph of age.}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--855
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--855
+
+ []
+
+[27] [28 </home/duc/Pictures/complex_project_17.png (PNG copy)> </home/duc/Pict
+ures/complex_project_16.png (PNG copy)>]
+Overfull \hbox (85.04926pt too wide) in paragraph at lines 859--860
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (141.44916pt too wide) in paragraph at lines 861--862
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.8493pt too wide) in paragraph at lines 862--863
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.89929pt too wide) in paragraph at lines 863--864
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.89929pt too wide) in paragraph at lines 864--865
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.14923pt too wide) in paragraph at lines 869--870
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.94928pt too wide) in paragraph at lines 871--872
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 873--874
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[29]
+</home/duc/Pictures/complex_project_18.png, id=121, 867.24pt x 639.89063pt>
+File: /home/duc/Pictures/complex_project_18.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_18.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_18.png  used on inp
+ut line 880.
+(pdftex.def)             Requested size: 241.49895pt x 178.18199pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.882 \caption
+              {Figure 18: Exploration E2\_3, number of peoples in each state.}
+? 
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   M
+l.884 \underline{\textbf{#Model M2.4}}
+                                      
+? 
+! Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.884 \underline{\textbf{#Model M2.4}}
+                                      
+? 
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.884 \underline{\textbf{#Model M2.4}}
+                                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--893
+
+ []
+
+[30 </home/duc/Pictures/complex_project_18.png (PNG copy)>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931 \begin
+            {lstlisting}
+? 
+[31] [32] [33]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1029 
+       
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1031 \includegraphics
+                       [width=0.68\textwidth]{complex_project_19}
+? 
+</home/duc/Pictures/complex_project_19.png, id=135, 574.39594pt x 430.60875pt>
+File: /home/duc/Pictures/complex_project_19.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_19.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_19.png  used on inp
+ut line 1031.
+(pdftex.def)             Requested size: 234.59747pt x 175.86739pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1033 \caption
+               {Figure 19: Exploration M2\_4, a triangle is the virus in the...
+
+? 
+</home/duc/Pictures/complex_project_20.png, id=136, 577.40718pt x 579.66562pt>
+File: /home/duc/Pictures/complex_project_20.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_20.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_20.png  used on inp
+ut line 1035.
+(pdftex.def)             Requested size: 234.59747pt x 235.5151pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1037 \caption
+               {Figure 20: Exploration M2\_4, E inhabitants become I inhabit...
+
+? 
+[34 </home/duc/Pictures/complex_project_19.png (PNG copy)> </home/duc/Pictures/
+complex_project_20.png (PNG copy)>] [35] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2885 strings out of 483140
- 41146 string characters out of 5965152
- 299225 words of memory out of 5000000
- 17922 multiletter control sequences out of 15000+600000
- 536632 words of font info for 38 fonts, out of 8000000 for 9000
+ 2967 strings out of 483140
+ 43949 string characters out of 5965152
+ 297225 words of memory out of 5000000
+ 18003 multiletter control sequences out of 15000+600000
+ 537286 words of font info for 40 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 30i,6n,36p,411b,1507s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (12 pages, 668726 bytes).
+ 30i,6n,36p,761b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (35 pages, 4236668 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 177 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

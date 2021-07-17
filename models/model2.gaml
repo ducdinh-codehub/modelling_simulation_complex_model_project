@@ -237,7 +237,7 @@ species inhabitants skills:[moving]{
 	bool is_exposed_state <- false;
 	bool is_recovery_state <- false;
 	
-	string epidemic_state;
+	string epidemic_state <- "S";
 	
 	point houseLocation;
 	point workLocation;

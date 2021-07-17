@@ -235,7 +235,7 @@ species inhabitants skills:[moving]{
 	bool is_exposed_state <- false;
 	bool is_recovery_state <- false;
 	
-	string epidemic_state;
+	string epidemic_state <- "S";
 	
 	point houseLocation;
 	point workLocation;
@@ -523,7 +523,7 @@ species virus skills:[moving]{
 		ask inhabitants at_distance 3.0 {
 			if (self.epidemic_state = "S"){
 				
-				self.is_susceptible_state <- true;
+				self.is_susceptible_state <- false;
 				self.is_exposed_state <- true;
 				self.epidemic_state <- "E";
 				

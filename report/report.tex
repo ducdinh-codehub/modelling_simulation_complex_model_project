@@ -45,7 +45,7 @@ We build this model base on the SEIR strategy which following states:\\
 - Create mechanism that allow E individuals automatically change their  states to I.(Following the duration)\\
 - Create mechanism that allow I individuals automatically change their  states to R.(Following the duration)\\
 - Displaying each individual with a circle and a colour depends on their state.\\
-- Creates 500 individuals and one infected individual in population, plot number of species in each states.\\\\
+- Creates 500 individuals and one infected individual in population, plot number of species in each states.\\
 
 \underline{\emph{Result}}\\
 \begin{lstlisting}
@@ -1039,7 +1039,120 @@ species buildings{
 \underline{\emph{Exploration}}
 \\\textbf{Exploration M2\_4. comparing the disease spread with and without environmental transmission.}
 \\- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3.
+\\- The speed and also the number of people in exploration of M2\_4 is clearly higher than the number in exploration of M2\_5, the reason is in the model M2\_4 we have the feature that allows virus can be transmitted in the environment so it enhances the number of exposed inhabitant very fast.
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_21}
+\\
+\caption{Figure 21: Exploration E2\_3, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the fifth day.} 
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_22}
+\\
+\caption{Figure 22: Exploration E2\_4, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the second day, it also increases very fast because of environmental transmission feature.} 
+\\
 \section{Public health policy}
+\\- Create two new species: the LocalAuthority and the Policy.
+\\- LocalAuthority decides the policy.
+\\- The policy can be trigger by time, infected inhabitants appear etc.
+\\- The policy is listed in the requirement.
+
+\\RESULT
+\\
+\begin{lstlisting}
+global{
+	etc..................
+	.....................
+	..................etc
+	int number_of_policy <- 4;
+	int policy_index <- 0;
+	list list_of_policy <- ["lockdown","lockage","lockschool","wearmask"];
+	string law <- "freedom";
+	float infect_prop <- 0.0;
+	int count_policy_date <- 0;
+	create policies number: number_of_policy{
+		policy <- list_of_policy[policy_index];
+		policy_index <- policy_index + 1;
+	}
+	create local_authority number: 1;
+	etc..................
+	.....................
+	..................etc
+}
+species local_authority{
+	reflex checkPolicyDate when: law != "freedom"{
+		// one day is 24 hour -> 3 days is 72 hour
+		// one day is 24 hour -> 10 days is 240 hour
+		// one day is 24 hour -> 30 days is 720 hour
+		if(count_policy_date >= 72){// for testing: 3 days for one policy 72 hours
+			law <- "freedom"; // Change to freedom state
+		}
+	}
+	reflex searchPolicy 
+	when: law = "freedom" 
+	and inhabitants count(each.is_infected_state = true) > 1{
+	//Check, can we free all inhabitants ?
+		ask one_of(policies){
+			law <- self.policy;
+		}
+		if (law = "wearmask"){
+		//The propability of disease transmit when inhabitant wears mask
+			infect_prop <- 0.5; 
+		}
+		else{
+			infect_prop <- 0.0;
+		}
+	}
+	reflex increasePolicyDuration when: law != "freedom"{// count law's duration
+		if(count_policy_date = 72){
+			count_policy_date <- 0;
+		}
+		if(cycle mod 60 = 0 and cycle != 0){
+			count_policy_date <- count_policy_date + 1;
+			write("count_policy_date: "+count_policy_date);
+		}
+	}
+}
+
+species policies{
+	string policy;
+}
+
+experiment M3_1{
+	output{
+		display map{
+			species buildings aspect:goem;
+			species roads aspect: goem;
+			species inhabitants aspect: goem;
+			species virus aspect: goem;
+		}
+		monitor "nb susceptible people" 
+		value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" 
+		value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" 
+		value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" 
+		value: inhabitants count(each.is_recovery_state = true);
+	}
+}
+\end{lstlisting}
+\\ - I add two new species which are local\_authority and policies, polices contain all the laws in the list\_of\_policy. Beside, the local\_authority choose the suitable law, the decision of this species is based on the number of infected case when the number of infected case is higher than one local\_authority will promulgate the law, to control the date of the law I create the action which start counting the date when the law is executed. I also modify the action of inhabitants species so that they can execute action base on the global variable law.
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_23}
+\\
+\caption{Figure 23: Exploration M3\_1, all inhabitants get freedom law.} 
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_24}
+\\
+\caption{Figure 24: Exploration M3\_1, all inhabitants get lockschool law when it finds out the infected case.} 
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_25}
+\\
+\caption{Figure 25: Exploration M3\_1, after three days local\_authority will consider to change the law bases on the desease situation, if model still have infected cases, it will change the law, and when infected cases don't exist, it will promulgate the freedom law so inhabitants can move around again.} 
+\\\\
+\includegraphics[width=0.68\textwidth]{complex_project_26}
+\\
+\caption{Figure 26: Exploration M3\_1, freedom again !.} 
+\\
 \end{document}
 
 

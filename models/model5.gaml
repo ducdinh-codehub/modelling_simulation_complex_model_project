@@ -27,7 +27,6 @@ global{
 	list list_of_policy <- ["lockdown","lockage","lockschool","wearmask"];
 	
 	string law <- "freedom";
-	string testLaw <- "freedom";
 	float infect_prop <- 0.0;
 	
 	int count_policy_date <- 0;
@@ -596,7 +595,6 @@ species virus skills:[moving]{
 		}
 	}
 	// virus can life 3 days on the environment
-	 
 	reflex death when: count_life_time = 72{
 		is_live <- false;
 		my_color <- #black;
@@ -665,13 +663,22 @@ experiment M3_1{
 			species inhabitants aspect: goem;
 			species virus aspect: goem;
 		}
-		/*display Population_gender {
+		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
+	}
+}
+
+experiment E3_1{
+	output{
+		display Population_gender {
 			chart "Population gender" type: histogram {
 				datalist ["Male", "Female"] value:[length(inhabitants where(each.my_gender="male")), length(inhabitants where(each.my_gender="female"))];
 			}								
-		}*/
+		}
 		
-		/*display Population_by_age {
+		display Population_by_age {
 			chart "Population by age" type: histogram {
 				datalist ["Childen", "Adults", "Old people"] 
 				value:[
@@ -680,15 +687,15 @@ experiment M3_1{
 					   length(inhabitants where(55 <= each.my_age and each.my_age <= 100))
 					  ];
 			}
-		}*/
+		}
 		
-		/*display Epidemic_plotting {
+		display Epidemic_plotting {
 			chart "States of the agents" type: series style: line {
 				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.is_susceptible_state = true), inhabitants count (each.is_exposed_state = true), 
 														  inhabitants count (each.is_infected_state = true), inhabitants count (each.is_recovery_state = true)] 
 												  color: [#blue, #gold, #red, #lightblue];
 			}
-		}*/
+		}
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);

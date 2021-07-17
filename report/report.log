@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  17 JUL 2021 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  17 JUL 2021 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,30 +1502,276 @@ l.1037 \caption
                {Figure 20: Exploration M2\_4, E inhabitants become I inhabit...
 
 ? 
+</home/duc/Pictures/complex_project_21.png, id=137, 1218.80344pt x 581.92406pt>
+
+File: /home/duc/Pictures/complex_project_21.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_21.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_21.png  used on inp
+ut line 1044.
+(pdftex.def)             Requested size: 234.59747pt x 112.00519pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1046 \caption
+               {Figure 21: Exploration E2\_3, the date is displayed on the c...
+
+? 
+</home/duc/Pictures/complex_project_22.png, id=138, 1218.05063pt x 587.19376pt>
+
+File: /home/duc/Pictures/complex_project_22.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_22.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_22.png  used on inp
+ut line 1048.
+(pdftex.def)             Requested size: 234.59747pt x 113.09114pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1050 \caption
+               {Figure 22: Exploration E2\_4, the date is displayed on the c...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1052
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1052
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1052
+
+ []
+
 [34 </home/duc/Pictures/complex_project_19.png (PNG copy)> </home/duc/Pictures/
-complex_project_20.png (PNG copy)>] [35] (./report.aux) ) 
+complex_project_20.png (PNG copy)>] [35 </home/duc/Pictures/complex_project_21.
+png (PNG copy)> </home/duc/Pictures/complex_project_22.png (PNG copy)>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1053 \\-
+           Create two new species: the LocalAuthority and the Policy.
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1058 \\R
+          ESULT
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1060
+
+ []
+
+
+Overfull \hbox (162.59912pt too wide) in paragraph at lines 1067--1068
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (204.89905pt too wide) in paragraph at lines 1085--1086
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.49939pt too wide) in paragraph at lines 1086--1087
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+Overfull \hbox (70.94928pt too wide) in paragraph at lines 1091--1092
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (134.39917pt too wide) in paragraph at lines 1097--1098
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (204.89905pt too wide) in paragraph at lines 1104--1105
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.4494pt too wide) in paragraph at lines 1109--1110
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (28.64935pt too wide) in paragraph at lines 1110--1111
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.14923pt too wide) in paragraph at lines 1128--1129
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[37]
+Overfull \hbox (70.94928pt too wide) in paragraph at lines 1130--1131
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 1132--1133
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (77.99927pt too wide) in paragraph at lines 1134--1135
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1138 \\ -
+            I add two new species which are local\_authority and policies, p...
+
+? 
+</home/duc/Pictures/complex_project_23.png, id=152, 1215.79219pt x 576.65437pt>
+
+File: /home/duc/Pictures/complex_project_23.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_23.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_23.png  used on inp
+ut line 1140.
+(pdftex.def)             Requested size: 234.59747pt x 111.26367pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1142 \caption
+               {Figure 23: Exploration M3\_1, all inhabitants get freedom law.}
+
+? 
+</home/duc/Pictures/complex_project_24.png, id=153, 1216.545pt x 540.51938pt>
+File: /home/duc/Pictures/complex_project_24.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_24.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_24.png  used on inp
+ut line 1144.
+(pdftex.def)             Requested size: 234.59747pt x 104.23381pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1146 \caption
+               {Figure 24: Exploration M3\_1, all inhabitants get lockschool...
+
+? 
+</home/duc/Pictures/complex_project_25.png, id=154, 1215.03937pt x 539.76656pt>
+
+File: /home/duc/Pictures/complex_project_25.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_25.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_25.png  used on inp
+ut line 1148.
+(pdftex.def)             Requested size: 234.59747pt x 104.21217pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1150 \caption
+               {Figure 25: Exploration M3\_1, after three days local\_author...
+
+? 
+</home/duc/Pictures/complex_project_26.png, id=155, 1217.2978pt x 530.73282pt>
+File: /home/duc/Pictures/complex_project_26.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_26.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_26.png  used on inp
+ut line 1152.
+(pdftex.def)             Requested size: 234.59747pt x 102.28178pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1154 \caption
+               {Figure 26: Exploration M3\_1, freedom again !.}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1156
+
+ []
+
+[38 </home/duc/Pictures/complex_project_23.png (PNG copy)> </home/duc/Pictures/
+complex_project_24.png (PNG copy)>] [39 </home/duc/Pictures/complex_project_25.
+png (PNG copy)> </home/duc/Pictures/complex_project_26.png (PNG copy)>]
+(./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2967 strings out of 483140
- 43949 string characters out of 5965152
+ 3009 strings out of 483140
+ 45443 string characters out of 5965152
  297225 words of memory out of 5000000
- 18003 multiletter control sequences out of 15000+600000
+ 18045 multiletter control sequences out of 15000+600000
  537286 words of font info for 40 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  30i,6n,36p,761b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (35 pages, 4236668 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (39 pages, 8953904 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 198 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

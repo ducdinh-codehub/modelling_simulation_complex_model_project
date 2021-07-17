@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  17 JUL 2021 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  18 JUL 2021 01:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,47 +502,74 @@ l.72 \end{tcolorbox}
                     
 ? 
 [2]
-Overfull \hbox (13.74902pt too wide) in paragraph at lines 137--138
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \\\\
+         
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \begin
+           {lstlisting}
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.94 \end{lstlisting}
+                     
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.96 \newpage
+             
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.96 \newpage
+             
+? 
+[3]
+Overfull \hbox (13.74902pt too wide) in paragraph at lines 147--148
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (2.64899pt too wide) in paragraph at lines 142--143
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 152--153
 [][][][][][][][][][][][] 
  []
 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.148 \end{lstlisting}
+l.158 \end{lstlisting}
                       
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.151 \\
-        
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.151 \\
-        
-? 
-[3]
-Overfull \vbox (174.91684pt too high) has occurred while \output is active []
+
+Overfull \vbox (130.91684pt too high) has occurred while \output is active []
 
 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.151 \\
+l.161 \\
         
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.151 \\
+l.161 \\
         
 ? 
 [4]
@@ -553,7 +580,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 \\\\
+l.171 \\\\
           
 ? 
 
@@ -563,14 +590,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \begin{pic1}
+l.179 \begin{pic1}
                   
 ? 
 </home/duc/Pictures/complex_project_1.png, id=26, 652.68843pt x 640.64343pt>
 File: /home/duc/Pictures/complex_project_1.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_1.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_1.png  used on inpu
-t line 170.
+t line 180.
 (pdftex.def)             Requested size: 241.49895pt x 237.04413pt.
 
 ! LaTeX Error: \caption outside float.
@@ -579,21 +606,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \caption
+l.182 \caption
               {Figure 1: Simulation of model M1\_1, following the requiremen...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.172 \caption{F
+l.182 \caption{F
                 igure 1: Simulation of model M1\_1, following the requiremen...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.172 \caption{F
+l.182 \caption{F
                 igure 1: Simulation of model M1\_1, following the requiremen...
 
 ? 
@@ -605,7 +632,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \end{pic1}
+l.183 \end{pic1}
                 
 ? 
 
@@ -615,14 +642,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 \begin{pic2}
+l.185 \begin{pic2}
                   
 ? 
 </home/duc/Pictures/complex_project_2.png, id=30, 668.4975pt x 639.89063pt>
 File: /home/duc/Pictures/complex_project_2.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_2.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_2.png  used on inpu
-t line 176.
+t line 186.
 (pdftex.def)             Requested size: 241.49895pt x 231.16109pt.
 
 ! LaTeX Error: \caption outside float.
@@ -631,7 +658,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 \caption
+l.188 \caption
               {Figure 2: Simulation of model M1\_1, after three days E indiv...
 
 ? 
@@ -642,7 +669,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \end{pic2}
+l.189 \end{pic2}
                 
 ? 
 
@@ -652,7 +679,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 \\\\
+l.190 \\\\
           
 ? 
 
@@ -662,14 +689,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \begin{pic3}
+l.191 \begin{pic3}
                   
 ? 
 </home/duc/Pictures/complex_project_3.png, id=31, 648.17157pt x 639.13782pt>
 File: /home/duc/Pictures/complex_project_3.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_3.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_3.png  used on inpu
-t line 182.
+t line 192.
 (pdftex.def)             Requested size: 241.49895pt x 238.13521pt.
 
 ! LaTeX Error: \caption outside float.
@@ -678,21 +705,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 \caption
+l.194 \caption
               {Figure 3: Simulation of model M1\_1, all E individuals change...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.184 \caption{F
+l.194 \caption{F
                 igure 3: Simulation of model M1\_1, all E individuals change...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.184 \caption{F
+l.194 \caption{F
                 igure 3: Simulation of model M1\_1, all E individuals change...
 
 ? 
@@ -705,7 +732,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \end{pic3}
+l.195 \end{pic3}
                 
 ? 
 
@@ -715,7 +742,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 \\\\
+l.196 \\\\
           
 ? 
 
@@ -725,14 +752,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \begin{pic4}
+l.197 \begin{pic4}
                   
 ? 
 </home/duc/Pictures/complex_project_4.png, id=35, 666.99188pt x 641.39626pt>
 File: /home/duc/Pictures/complex_project_4.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_4.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_4.png  used on inpu
-t line 188.
+t line 198.
 (pdftex.def)             Requested size: 241.49895pt x 232.23349pt.
 
 ! LaTeX Error: \caption outside float.
@@ -741,7 +768,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190 \caption
+l.200 \caption
               {Figure 4: Simulation of model M1\_1, all E individuals become...
 
 ? 
@@ -752,7 +779,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 \end{pic4}
+l.201 \end{pic4}
                 
 ? 
 
@@ -762,7 +789,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 \\\\
+l.202 \\\\
           
 ? 
 
@@ -772,15 +799,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \begin{pic5}
+l.203 \begin{pic5}
                   
 ? 
 </home/duc/Pictures/complex_project_5.png, id=36, 663.22781pt x 636.87938pt>
 File: /home/duc/Pictures/complex_project_5.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_5.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_5.png  used on inpu
-t line 194.
-(pdftex.def)             Requested size: 262.1981pt x 251.78325pt.
+t line 204.
+(pdftex.def)             Requested size: 241.49895pt x 231.90025pt.
 
 ! LaTeX Error: \caption outside float.
 
@@ -788,21 +815,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \caption
+l.206 \caption
               {Figure 5: Simulation of model M1\_1, all I individuals gradua...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.196 \caption{F
+l.206 \caption{F
                 igure 5: Simulation of model M1\_1, all I individuals gradua...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.196 \caption{F
+l.206 \caption{F
                 igure 5: Simulation of model M1\_1, all I individuals gradua...
 
 ? 
@@ -815,7 +842,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \end{pic5}
+l.207 \end{pic5}
                 
 ? 
 
@@ -825,7 +852,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 \\\\
+l.208 \\\\
           
 ? 
 
@@ -835,15 +862,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 \begin{pic6}
+l.209 \begin{pic6}
                   
 ? 
 </home/duc/Pictures/complex_project_6.png, id=41, 673.01437pt x 639.13782pt>
 File: /home/duc/Pictures/complex_project_6.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_6.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_6.png  used on inpu
-t line 200.
-(pdftex.def)             Requested size: 262.1981pt x 248.99944pt.
+t line 210.
+(pdftex.def)             Requested size: 241.49895pt x 229.3385pt.
 
 ! LaTeX Error: \caption outside float.
 
@@ -851,7 +878,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \caption
+l.212 \caption
               {Figure 6: Simulation of model M1\_1, number of individuals wh...
 
 ? 
@@ -862,7 +889,128 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.203 \end{pic6}
+l.213 \end{pic6}
+                
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.214 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.214 \newpage
+              
+? 
+[8 </home/duc/Pictures/complex_project_5.png (PNG copy)> </home/duc/Pictures/co
+mplex_project_6.png (PNG copy)>]
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 227--228
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.249 \end{lstlisting}
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.251 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.251 \newpage
+              
+? 
+[9]
+Overfull \hbox (19.29904pt too wide) in paragraph at lines 262--263
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.39908pt too wide) in paragraph at lines 263--264
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.270 \end{lstlisting}
+                      
+? 
+
+! LaTeX Error: Environment doc undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.273 \begin{doc}
+                 
+? 
+
+! LaTeX Error: \begin{document} ended by \end{doc}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \end{doc}
+               
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.276 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.276 \newpage
+              
+? 
+[10]
+
+! LaTeX Error: Environment pic7 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 \begin{pic7}
+                  
+? 
+</home/duc/Pictures/complex_project_7.png, id=51, 971.88094pt x 690.32906pt>
+File: /home/duc/Pictures/complex_project_7.png Graphic file (type png)
+<use /home/duc/Pictures/complex_project_7.png>
+Package pdftex.def Info: /home/duc/Pictures/complex_project_7.png  used on inpu
+t line 278.
+(pdftex.def)             Requested size: 310.4979pt x 220.54114pt.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 \caption
+              {Figure 7: Exploration E1\_1, ten experiments.}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{pic7}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 \end{pic7}
                 
 ? 
 
@@ -872,173 +1020,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 \\\\
+l.282 \\\\
           
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.204 \\\\
-          
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.204 \\\\
-          
-? 
-[8 </home/duc/Pictures/complex_project_5.png (PNG copy)> </home/duc/Pictures/co
-mplex_project_6.png (PNG copy)>]
-Overfull \hbox (24.84906pt too wide) in paragraph at lines 214--215
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
 
-
-Overfull \hbox (2.64899pt too wide) in paragraph at lines 217--218
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 219--220
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 222--223
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 225--226
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 228--229
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 231--232
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 234--235
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 237--238
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 240--241
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 243--244
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.9491pt too wide) in paragraph at lines 246--247
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (52.59915pt too wide) in paragraph at lines 254--255
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (19.29904pt too wide) in paragraph at lines 255--256
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (30.39908pt too wide) in paragraph at lines 256--257
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.263 \end{lstlisting}
-                      
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.266 \\
-        \\
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.266 \\
-        \\
-? 
-[9]
-Overfull \vbox (31.91684pt too high) has occurred while \output is active []
-
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.266 \\
-        \\
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.266 \\
-        \\
-? 
-[10]
-
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: Environment pic8 undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 \\\\
-          
-? 
-</home/duc/Pictures/complex_project_7.png, id=51, 971.88094pt x 690.32906pt>
-File: /home/duc/Pictures/complex_project_7.png Graphic file (type png)
-<use /home/duc/Pictures/complex_project_7.png>
-Package pdftex.def Info: /home/duc/Pictures/complex_project_7.png  used on inpu
-t line 267.
-(pdftex.def)             Requested size: 310.4979pt x 220.54114pt.
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.269 \caption
-              {Figure 7: Exploration E1\_1, ten experiments.}
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \\\\
-          
+l.283 \begin{pic8}
+                  
 ? 
 </home/duc/Pictures/complex_project_8.png, id=52, 951.555pt x 632.3625pt>
 File: /home/duc/Pictures/complex_project_8.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_8.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_8.png  used on inpu
-t line 271.
+t line 284.
 (pdftex.def)             Requested size: 310.4979pt x 206.3452pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1047,15 +1046,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.273 \caption
+l.286 \caption
               {Figure 8: Exploration E1\_1, E cases increase, S cases decrea...
 
+? 
+
+! LaTeX Error: \begin{document} ended by \end{pic8}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{pic8}
+                
+? 
+
+! LaTeX Error: Environment pic9 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.289 \begin{pic9}
+                  
 ? 
 </home/duc/Pictures/complex_project_9.png, id=53, 956.07187pt x 611.28375pt>
 File: /home/duc/Pictures/complex_project_9.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_9.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_9.png  used on inpu
-t line 275.
+t line 290.
 (pdftex.def)             Requested size: 310.4979pt x 198.51563pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1064,167 +1083,146 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 \caption
+l.292 \caption
               {Figure 9: Exploration E1\_1, I cases appear.}
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.277 \caption{F
+l.292 \caption{F
                 igure 9: Exploration E1\_1, I cases appear.}
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.277 \caption{F
+l.292 \caption{F
                 igure 9: Exploration E1\_1, I cases appear.}
 ? 
 [11 </home/duc/Pictures/complex_project_7.png (PNG copy)> </home/duc/Pictures/c
 omplex_project_8.png (PNG copy)>]
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 289--290
-[][][][][][][][][][][][][] 
- []
 
+! LaTeX Error: \begin{document} ended by \end{pic9}.
 
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 290--291
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 291--292
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 292--293
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 293--294
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 294--295
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 295--296
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 296--297
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 297--298
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 298--299
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 299--300
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 300--301
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 301--302
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 302--303
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 303--304
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 304--305
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 305--306
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 306--307
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 307--308
-[][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.308 		number_of_infected_people:
-                                  :number_of_infected_people,seed::seed];
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 \end{pic9}
+                
 ? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.308 		number_of_infected_people:
-                                  :number_of_infected_people,seed::seed];
-? 
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 305--307
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 310--311
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 314--315
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 318--319
+[][][][][][][] 
+ []
+
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.308 		number_of_infected_people:
-                                  :number_of_infected_people,seed::seed];
+l.322 \end{lstlisting}
+                      
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.308 		number_of_infected_people:
-                                  :number_of_infected_people,seed::seed];
-? 
-[12 </home/duc/Pictures/complex_project_9.png (PNG copy)>]
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 308--309
-[][][][][][][][][][][] 
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 328--329
+[][][][][][][] 
  []
 
 
-Overfull \hbox (54.60132pt too wide) in paragraph at lines 314--315
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 332--333
+[][][][][][][] 
  []
 
 
-Overfull \hbox (21.30121pt too wide) in paragraph at lines 315--316
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 336--337
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 340--341
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 344--345
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 348--349
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 352--353
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (41.49911pt too wide) in paragraph at lines 360--361
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (43.50128pt too wide) in paragraph at lines 317--318
+Overfull \hbox (52.59915pt too wide) in paragraph at lines 361--362
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.39908pt too wide) in paragraph at lines 362--363
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (74.79922pt too wide) in paragraph at lines 363--364
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.324 \end{lstlisting}
+l.370 \end{lstlisting}
                       
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.372 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.372 \newpage
+              
+? 
+[12 </home/duc/Pictures/complex_project_9.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.372 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.372 \newpage
+              
+? 
+[13]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1232,25 +1230,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.326 \\
+l.373 \\
         - I create 11 experiments which use the same seed and each experimen...
 
 ? 
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: Environment pic10 undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.328 \\
-        
+l.375 \begin{pic10}
+                   
 ? 
-</home/duc/Pictures/complex_project_10.png, id=60, 951.555pt x 692.5875pt>
+</home/duc/Pictures/complex_project_10.png, id=64, 951.555pt x 692.5875pt>
 File: /home/duc/Pictures/complex_project_10.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_10.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_10.png  used on inp
-ut line 329.
+ut line 376.
 (pdftex.def)             Requested size: 310.4979pt x 225.99712pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1259,27 +1257,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 \caption
+l.378 \caption
               {Figure 10: Exploration E1\_2, eleven experiments use the same...
 
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.341 \begin{lstlisting}
-                        
+
+! LaTeX Error: \begin{document} ended by \end{pic10}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.379 \end{pic10}
+                 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.341 \begin{lstlisting}
-                        
+l.381 \newpage
+              
 ? 
-[13 </home/duc/Pictures/complex_project_10.png (PNG copy)>]
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.360 \end{lstlisting}
+l.381 \newpage
+              
+? 
+[14 </home/duc/Pictures/complex_project_10.png (PNG copy)>]
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 400--401
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.413 \end{lstlisting}
                       
 ? 
 
@@ -1289,205 +1301,40 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.362 \\
+l.416 \\
         - In this model, we will simulate the process of spreading desease i...
 
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.417 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.417 \newpage
+              
+? 
+[15]
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    M
-l.364 \underline{\textbf{#Model M2}}
+l.418 \underline{\textbf{#Model M2}}
                                     
 ? 
 ! Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.364 \underline{\textbf{#Model M2}}
+l.418 \underline{\textbf{#Model M2}}
                                     
 ? 
 ! You can't use `macro parameter character #' in restricted horizontal mode.
 <recently read> ##
                   
-l.364 \underline{\textbf{#Model M2}}
+l.418 \underline{\textbf{#Model M2}}
                                     
-? 
-
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 376--377
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (110.1015pt too wide) in paragraph at lines 377--378
-[][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.379 	graph 
-             road_graph;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.379 	graph 
-             road_graph;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.379 	graph 
-             road_graph;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.379 	graph 
-             road_graph;
-? 
-[14]
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.429 		create 
-               buildings from: buildings0_shape_file{
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.429 		create 
-               buildings from: buildings0_shape_file{
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.429 		create 
-               buildings from: buildings0_shape_file{
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.429 		create 
-               buildings from: buildings0_shape_file{
-? 
-[15]
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 430--431
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 444--445
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 455--456
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 466--467
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 477--478
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.479 								self.
-                   have_home <- true;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.479 								self.
-                   have_home <- true;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.479 								self.
-                   have_home <- true;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.479 								self.
-                   have_home <- true;
-? 
-[16]
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 486--487
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (143.40161pt too wide) in paragraph at lines 496--497
-[][][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.529 		buildings 
-                  gorcery;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.529 		buildings 
-                  gorcery;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.529 		buildings 
-                  gorcery;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.529 		buildings 
-                  gorcery;
-? 
-[17]
-Overfull \hbox (60.15134pt too wide) in paragraph at lines 532--533
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 533--534
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (71.25137pt too wide) in paragraph at lines 534--535
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (71.25137pt too wide) in paragraph at lines 535--536
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (26.85123pt too wide) in paragraph at lines 536--537
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 537--539
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.554 \end{lstlisting}
-                      
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -1496,15 +1343,202 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.555 \\
-        - "create inhabitants number\_of\_inhabitant", "create buildings fro...
-
+l.428 \newline
+              \newline
 ? 
-</home/duc/Pictures/complex_project_11.png, id=77, 914.66719pt x 635.37375pt>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.428 \newline\newline
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.466 \end{lstlisting}
+                      
+? 
+
+Overfull \hbox (30.39908pt too wide) in paragraph at lines 492--493
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (24.84906pt too wide) in paragraph at lines 504--505
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 508--509
+[][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.515 \end{lstlisting}
+                      
+? 
+
+Overfull \hbox (24.84906pt too wide) in paragraph at lines 520--521
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 524--525
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (13.74902pt too wide) in paragraph at lines 532--533
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 536--537
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (13.74902pt too wide) in paragraph at lines 544--545
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 548--549
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.9491pt too wide) in paragraph at lines 556--557
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 559--560
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (174.69955pt too wide) in paragraph at lines 566--567
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (8.199pt too wide) in paragraph at lines 567--568
+[][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.570 \end{lstlisting}
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.606 \end{lstlisting}
+                      
+? 
+
+Overfull \hbox (8.199pt too wide) in paragraph at lines 626--627
+[][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.638 \end{lstlisting}
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+[16]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+[17]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+[18]
+Overfull \vbox (42.91684pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+[19]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.642 \\
+        
+? 
+[20]
+
+! LaTeX Error: Environment pic11 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.643 \begin{pic11}
+                   
+? 
+</home/duc/Pictures/complex_project_11.png, id=87, 914.66719pt x 635.37375pt>
 File: /home/duc/Pictures/complex_project_11.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_11.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_11.png  used on inp
-ut line 557.
+ut line 644.
 (pdftex.def)             Requested size: 310.4979pt x 215.68489pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1513,25 +1547,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.559 \caption
+l.646 \caption
               {Figure 11: Exploration M2\_1, the city after importing the sh...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.559 \caption{F
+l.646 \caption{F
                 igure 11: Exploration M2\_1, the city after importing the sh...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.559 \caption{F
+l.646 \caption{F
                 igure 11: Exploration M2\_1, the city after importing the sh...
 
 ? 
-[18]
+[21]
+
+! LaTeX Error: \begin{document} ended by \end{pic11}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.647 \end{pic11}
+                 
+? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1539,125 +1583,127 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.560 \\\\
+l.648 \\\\
           
 ? 
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.587 	point 
-             restaurantLocation;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.587 	point 
-             restaurantLocation;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.587 	point 
-             restaurantLocation;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.587 	point 
-             restaurantLocation;
-? 
-[19 </home/duc/Pictures/complex_project_11.png (PNG copy)>]
-Overfull \hbox (32.40125pt too wide) in paragraph at lines 614--615
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+Overfull \hbox (8.199pt too wide) in paragraph at lines 652--653
+[][][][][][][][][][][][][][][][] 
  []
 
 ! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.637 		target 
-               <- gorceryLocation;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.637 		target 
-               <- gorceryLocation;
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.673 \end{lstlisting}
+                      
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.637 		target 
-               <- gorceryLocation;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.637 		target 
-               <- gorceryLocation;
-? 
-[20]
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.687 			}
-          
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.687 			}
-          
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.687 			}
-          
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.687 			}
-          
-? 
-[21]
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.723 \end{lstlisting}
+l.722 \end{lstlisting}
                       
 ? 
 
-! LaTeX Error: There's no line here to end.
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 728--729
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.724 \\
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.772 \end{lstlisting}
+                      
+? 
+
+Overfull \hbox (2.64899pt too wide) in paragraph at lines 806--807
+[][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.824 \end{lstlisting}
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\
         - Each inhabitants have their own calendar so they can move every lo...
 
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.726 \includegraphics
-                      [width=0.70\textwidth]{complex_project_12}
+l.826 \\
+        - Each inhabitants have their own calendar so they can move every lo...
+
+? 
+[22 </home/duc/Pictures/complex_project_11.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\
+        - Each inhabitants have their own calendar so they can move every lo...
+
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.726 \includegraphics
-                      [width=0.70\textwidth]{complex_project_12}
+l.826 \\
+        - Each inhabitants have their own calendar so they can move every lo...
+
 ? 
-[22]
-</home/duc/Pictures/complex_project_12.png, id=94, 813.79031pt x 609.77812pt>
+[23]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\-
+          Each inhabitants have their own calendar so they can move every lo...
+
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\-
+          Each inhabitants have their own calendar so they can move every lo...
+
+? 
+[24]
+Overfull \vbox (9.91684pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\-
+          Each inhabitants have their own calendar so they can move every lo...
+
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.826 \\-
+          Each inhabitants have their own calendar so they can move every lo...
+
+? 
+[25]
+
+! LaTeX Error: Environment pic12 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.828 \begin{pic12}
+                   
+? 
+</home/duc/Pictures/complex_project_12.png, id=104, 813.79031pt x 609.77812pt>
 File: /home/duc/Pictures/complex_project_12.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_12.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_12.png  used on inp
-ut line 726.
+ut line 829.
 (pdftex.def)             Requested size: 241.49895pt x 180.95299pt.
-
 
 ! LaTeX Error: \caption outside float.
 
@@ -1665,15 +1711,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.728 \caption
+l.831 \caption
               {Figure 12: Exploration M2\_1 + M2\_2, some individuals with p...
 
 ? 
-</home/duc/Pictures/complex_project_13.png, id=95, 572.1375pt x 598.48593pt>
+
+! LaTeX Error: \begin{document} ended by \end{pic12}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.832 \end{pic12}
+                 
+? 
+
+! LaTeX Error: Environment pic13 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.834 \begin{pic13}
+                   
+? 
+</home/duc/Pictures/complex_project_13.png, id=105, 572.1375pt x 598.48593pt>
 File: /home/duc/Pictures/complex_project_13.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_13.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_13.png  used on inp
-ut line 730.
+ut line 835.
 (pdftex.def)             Requested size: 234.59747pt x 245.39908pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1682,15 +1748,50 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.732 \caption
+l.837 \caption
               {Figure 13: Exploration M2\_1 + M2\_2, all inhabitants stay wi...
 
 ? 
-</home/duc/Pictures/complex_project_14.png, id=96, 579.66562pt x 526.21594pt>
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.837 \caption{F
+                igure 13: Exploration M2\_1 + M2\_2, all inhabitants stay wi...
+
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.837 \caption{F
+                igure 13: Exploration M2\_1 + M2\_2, all inhabitants stay wi...
+
+? 
+[26 </home/duc/Pictures/complex_project_12.png (PNG copy)>]
+
+! LaTeX Error: \begin{document} ended by \end{pic13}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.838 \end{pic13}
+                 
+? 
+
+! LaTeX Error: Environment pic14 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.840 \begin{pic14}
+                   
+? 
+</home/duc/Pictures/complex_project_14.png, id=109, 579.66562pt x 526.21594pt>
 File: /home/duc/Pictures/complex_project_14.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_14.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_14.png  used on inp
-ut line 734.
+ut line 841.
 (pdftex.def)             Requested size: 234.59747pt x 212.96373pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1699,33 +1800,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.736 \caption
+l.843 \caption
               {Figure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants...
 
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.736 \caption{F
-                igure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants...
 
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.736 \caption{F
-                igure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants...
+! LaTeX Error: \begin{document} ended by \end{pic14}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844 \end{pic14}
+                 
 ? 
-[23 </home/duc/Pictures/complex_project_12.png (PNG copy)> </home/duc/Pictures/
-complex_project_13.png (PNG copy)>]
-</home/duc/Pictures/complex_project_15.png, id=100, 577.40718pt x 564.60938pt>
+
+! LaTeX Error: Environment pic15 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.846 \begin{pic15}
+                   
+? 
+</home/duc/Pictures/complex_project_15.png, id=110, 577.40718pt x 564.60938pt>
 File: /home/duc/Pictures/complex_project_15.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_15.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_15.png  used on inp
-ut line 738.
+ut line 847.
 (pdftex.def)             Requested size: 241.49895pt x 236.15218pt.
-
 
 ! LaTeX Error: \caption outside float.
 
@@ -1733,175 +1837,104 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.740 \caption
+l.849 \caption
               {Figure 15: Exploration M2\_1 + M2\_2, all infected inhabitant...
 
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.849 \caption{F
+                igure 15: Exploration M2\_1 + M2\_2, all infected inhabitant...
 
-! LaTeX Error: There's no line here to end.
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.849 \caption{F
+                igure 15: Exploration M2\_1 + M2\_2, all infected inhabitant...
+
+? 
+[27 </home/duc/Pictures/complex_project_13.png (PNG copy)> </home/duc/Pictures/
+complex_project_14.png (PNG copy)>]
+
+! LaTeX Error: Environment pic15 undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.741 \\\\
-          
+l.850 \begin{pic15}
+                   
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.744 \begin{lstlisting}
-                        
+l.851 \newpage
+              
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.744 \begin{lstlisting}
-                        
+l.851 \newpage
+              
 ? 
-[24 </home/duc/Pictures/complex_project_14.png (PNG copy)> </home/duc/Pictures/
-complex_project_15.png (PNG copy)>]
-Overfull \hbox (126.75156pt too wide) in paragraph at lines 746--747
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (176.70172pt too wide) in paragraph at lines 747--749
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 750--751
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 752--753
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 754--755
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 756--757
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 758--759
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 760--761
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 762--763
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 764--765
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 766--767
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.0513pt too wide) in paragraph at lines 768--769
-[][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (187.80176pt too wide) in paragraph at lines 774--775
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
+[28 </home/duc/Pictures/complex_project_15.png (PNG copy)>]
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.784 \end{lstlisting}
+l.883 \end{lstlisting}
                       
 ? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.785 \\
-        \\\\
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.923 \end{lstlisting}
+                      
 ? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.785 \\\\
-          \\
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.925 \newpage
+              
 ? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.785 \\\\\\
-            
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.925 \newpage
+              
 ? 
+[29]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.925 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.925 \newpage
+              
+? 
+[30]
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    M
-l.786 \underline{\textbf{#Model M2\_3}}
+l.926 \underline{\textbf{#Model M2\_3}}
                                        \\
 ? 
 ! Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.786 \underline{\textbf{#Model M2\_3}}
+l.926 \underline{\textbf{#Model M2\_3}}
                                        \\
 ? 
 ! You can't use `macro parameter character #' in restricted horizontal mode.
 <recently read> ##
                   
-l.786 \underline{\textbf{#Model M2\_3}}
+l.926 \underline{\textbf{#Model M2\_3}}
                                        \\
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.791 \\
-        
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.791 \\
-        
-? 
-[25]
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 815--816
-[][][][][][][][][][][][][][][][][][] 
- []
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.823 \end{lstlisting}
-                      
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -1910,60 +1943,91 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.824 \\
+l.927 \newline
+              \newline
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.927 \newline\newline
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.969 \end{lstlisting}
+                      
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.971 \newpage
+              
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.971 \newpage
+              
+? 
+[31]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.972 \\
         - I still use the source code of model M2\_1 and M2\_2 and the diffe...
 
 ? 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.825 \\\\
-          
-? 
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.836 				value:
-                [length(inhabitants where(each.my_gender="male")),
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.836 				value:
-                [length(inhabitants where(each.my_gender="male")),
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.836 				value:
-                [length(inhabitants where(each.my_gender="male")),
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.836 				value:
-                [length(inhabitants where(each.my_gender="male")),
-? 
-[26]
-Overfull \hbox (10.20117pt too wide) in paragraph at lines 836--837
+Overfull \hbox (41.49911pt too wide) in paragraph at lines 986--987
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 854--855
-[][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (19.29904pt too wide) in paragraph at lines 987--988
+[][][][][][][][][][][][][][][] 
  []
 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.861 \end{lstlisting}
-                      
+l.1014 \end{lstlisting}
+                       
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1016 \newpage
+               
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1016 \newpage
+               
+? 
+[32]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1016 \newpage
+               
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1016 \newpage
+               
+? 
+[33]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1971,15 +2035,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.862 \\
-        - In this exploration, the system will create gender histogram and a...
+l.1017 \\
+         - In this exploration, the system will create gender histogram and ...
 
 ? 
-</home/duc/Pictures/complex_project_17.png, id=111, 569.12625pt x 639.13782pt>
+
+! LaTeX Error: Environment pic16 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1019 \begin{pic16}
+                    
+? 
+</home/duc/Pictures/complex_project_17.png, id=133, 569.12625pt x 639.13782pt>
 File: /home/duc/Pictures/complex_project_17.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_17.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_17.png  used on inp
-ut line 864.
+ut line 1020.
 (pdftex.def)             Requested size: 224.2479pt x 251.83739pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1988,29 +2062,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.866 \caption
-              {Figure 16: Exploration E2\_2, graph of gender.}
+l.1022 \caption
+               {Figure 16: Exploration E2\_2, graph of gender.}
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.866 \caption{F
-                igure 16: Exploration E2\_2, graph of gender.}
+
+! LaTeX Error: \begin{document} ended by \end{pic16}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1023 \end{pic16}
+                  
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.866 \caption{F
-                igure 16: Exploration E2\_2, graph of gender.}
+
+! LaTeX Error: Environment pic17 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1025 \begin{pic17}
+                    
 ? 
-[27]
-</home/duc/Pictures/complex_project_16.png, id=115, 573.64313pt x 643.6547pt>
+</home/duc/Pictures/complex_project_16.png, id=134, 573.64313pt x 643.6547pt>
 File: /home/duc/Pictures/complex_project_16.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_16.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_16.png  used on inp
-ut line 868.
+ut line 1026.
 (pdftex.def)             Requested size: 224.2479pt x 251.6136pt.
-
 
 ! LaTeX Error: \caption outside float.
 
@@ -2018,88 +2098,84 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.870 \caption
-              {Figure 17: Exploration E2\_2, graph of age.}
+l.1028 \caption
+               {Figure 17: Exploration E2\_2, graph of age.}
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1028 \caption{F
+                 igure 17: Exploration E2\_2, graph of age.}
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1028 \caption{F
+                 igure 17: Exploration E2\_2, graph of age.}
+? 
+[34 </home/duc/Pictures/complex_project_17.png (PNG copy)>]
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: \begin{document} ended by \end{pic17}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.871 \\\\
-          \\
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.871 \\\\\\
-            
+l.1029 \end{pic17}
+                  
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.873 \begin{lstlisting}
-                        
+l.1030 \newpage
+               
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.873 \begin{lstlisting}
-                        
+l.1030 \newpage
+               
 ? 
-[28 </home/duc/Pictures/complex_project_17.png (PNG copy)> </home/duc/Pictures/
-complex_project_16.png (PNG copy)>]
-Overfull \hbox (37.95126pt too wide) in paragraph at lines 879--880
-[][][][][][][][][][][][][][][][][][][][] 
+[35 </home/duc/Pictures/complex_project_16.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1062 \end{lstlisting}
+                       
+? 
+
+Overfull \hbox (22.3867pt too wide) in paragraph at lines 1031--1064
+[]$[]$ 
  []
 
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 887--888
-[][][][][][][][][][][][][][][][][][] 
- []
-
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.894 \end{lstlisting}
-                      
+l.1064 \newpage
+               
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.896 -
-        To discover the epidemic I create an experiment which can count all ...
-
+l.1064 \newpage
+               
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.896 -
-        To discover the epidemic I create an experiment which can count all ...
+[36]
 
-? 
-[29]
-
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: Environment pic18 undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.897 \\\\
-          
+l.1067 \begin{pic18}
+                    
 ? 
-</home/duc/Pictures/complex_project_18.png, id=122, 867.24pt x 639.89063pt>
+</home/duc/Pictures/complex_project_18.png, id=144, 867.24pt x 639.89063pt>
 File: /home/duc/Pictures/complex_project_18.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_18.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_18.png  used on inp
-ut line 898.
+ut line 1068.
 (pdftex.def)             Requested size: 241.49895pt x 178.18199pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2108,169 +2184,110 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.900 \caption
-              {Figure 18: Exploration E2\_3, number of peoples in each state.}
+l.1070 \caption
+               {Figure 18: Exploration E2\_3, number of peoples in each state.}
+
 ? 
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: \begin{document} ended by \end{pic18}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.901 \\\\
-          \\
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.901 \\\\\\
-            
+l.1071 \end{pic18}
+                  
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    M
-l.902 \underline{\textbf{#Model M2.4}}
-                                      
+l.1073 \underline{\textbf{#Model M2.4}}
+                                       
 ? 
 ! Illegal parameter number in definition of \reserved@b.
 <to be read again> 
                    }
-l.902 \underline{\textbf{#Model M2.4}}
-                                      
+l.1073 \underline{\textbf{#Model M2.4}}
+                                       
 ? 
 ! You can't use `macro parameter character #' in restricted horizontal mode.
 <recently read> ##
                   
-l.902 \underline{\textbf{#Model M2.4}}
-                                      
-? 
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.923 				self.
-               is_exposed_state <- true;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.923 				self.
-               is_exposed_state <- true;
+l.1073 \underline{\textbf{#Model M2.4}}
+                                       
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.923 				self.
-               is_exposed_state <- true;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.923 				self.
-               is_exposed_state <- true;
-? 
-[30 </home/duc/Pictures/complex_project_18.png (PNG copy)>]
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.947 \end{lstlisting}
-                      
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.948 \\
-        
-? 
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.975 				has_virus 
-                    <- true;
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.975 				has_virus 
-                    <- true;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.975 				has_virus 
-                    <- true;
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.975 				has_virus 
-                    <- true;
-? 
-[31]
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.1025 			}	
-            
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.1025 			}	
-            
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1025 			}	
-            
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1025 			}	
-            
-? 
-[32]
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1045 \end{lstlisting}
+l.1127 \end{lstlisting}
                        
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1175 \end{lstlisting}
+                       
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1222 \end{lstlisting}
+                       
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+[37 </home/duc/Pictures/complex_project_18.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+[38]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1225 
+       
+? 
+[39]
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: Environment pic19 undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1046 \\
-         
+l.1226 \begin{pic19}
+                    
 ? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1048 \\
-         
-? 
-</home/duc/Pictures/complex_project_19.png, id=133, 574.39594pt x 430.60875pt>
+</home/duc/Pictures/complex_project_19.png, id=155, 574.39594pt x 430.60875pt>
 File: /home/duc/Pictures/complex_project_19.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_19.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_19.png  used on inp
-ut line 1049.
+ut line 1227.
 (pdftex.def)             Requested size: 234.59747pt x 175.86739pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2279,15 +2296,50 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1051 \caption
+l.1229 \caption
                {Figure 19: Exploration M2\_4, a triangle is the virus in the...
 
 ? 
-</home/duc/Pictures/complex_project_20.png, id=134, 577.40718pt x 579.66562pt>
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1229 \caption{F
+                 igure 19: Exploration M2\_4, a triangle is the virus in the...
+
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1229 \caption{F
+                 igure 19: Exploration M2\_4, a triangle is the virus in the...
+
+? 
+[40]
+
+! LaTeX Error: \begin{document} ended by \end{pic19}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1230 \end{pic19}
+                  
+? 
+
+! LaTeX Error: Environment pic20 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1232 \begin{pic20}
+                    
+? 
+</home/duc/Pictures/complex_project_20.png, id=159, 577.40718pt x 579.66562pt>
 File: /home/duc/Pictures/complex_project_20.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_20.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_20.png  used on inp
-ut line 1053.
+ut line 1233.
 (pdftex.def)             Requested size: 234.59747pt x 235.5151pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2296,25 +2348,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1055 \caption
+l.1235 \caption
                {Figure 20: Exploration M2\_4, E inhabitants become I inhabit...
 
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1055 \caption{F
-                 igure 20: Exploration M2\_4, E inhabitants become I inhabit...
 
+! LaTeX Error: \begin{document} ended by \end{pic20}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1236 \end{pic20}
+                  
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1055 \caption{F
-                 igure 20: Exploration M2\_4, E inhabitants become I inhabit...
-
+l.1237 \newpage
+               
 ? 
-[33 </home/duc/Pictures/complex_project_19.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1237 \newpage
+               
+? 
+[41 </home/duc/Pictures/complex_project_19.png (PNG copy)> </home/duc/Pictures/
+complex_project_20.png (PNG copy)>]
+Overfull \hbox (74.26498pt too wide) in paragraph at lines 1238--1243
+[]$  
+ []
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2322,15 +2387,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1061 \\\\
+l.1244 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_21.png, id=138, 1218.80344pt x 581.92406pt>
+
+! LaTeX Error: Environment pic21 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1245 \begin{pic21}
+                    
+? 
+</home/duc/Pictures/complex_project_21.png, id=163, 1218.80344pt x 581.92406pt>
 
 File: /home/duc/Pictures/complex_project_21.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_21.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_21.png  used on inp
-ut line 1062.
+ut line 1246.
 (pdftex.def)             Requested size: 234.59747pt x 112.00519pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2339,24 +2414,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1064 \caption
+l.1248 \caption
                {Figure 21: Exploration E2\_3, the date is displayed on the c...
 
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1065 \\
-         \\
+
+! LaTeX Error: \begin{document} ended by \end{pic21}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1249 \end{pic21}
+                  
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1065 \\
-         \\
-? 
-[34 </home/duc/Pictures/complex_project_20.png (PNG copy)> </home/duc/Pictures/
-complex_project_21.png (PNG copy)>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2364,15 +2435,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1065 \\\\
+l.1250 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_22.png, id=142, 1218.05063pt x 587.19376pt>
+
+! LaTeX Error: Environment pic22 undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1251 \begin{pic22}
+                    
+? 
+</home/duc/Pictures/complex_project_22.png, id=164, 1218.05063pt x 587.19376pt>
 
 File: /home/duc/Pictures/complex_project_22.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_22.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_22.png  used on inp
-ut line 1066.
+ut line 1252.
 (pdftex.def)             Requested size: 234.59747pt x 113.09114pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2381,19 +2462,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1068 \caption
+l.1254 \caption
                {Figure 22: Exploration E2\_4, the date is displayed on the c...
 
 ? 
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: \begin{document} ended by \end{pic22}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1071 \\
-         - Create two new species: the LocalAuthority and the Policy.
+l.1255 \end{pic22}
+                  
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -2402,87 +2483,86 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1076 \\
+l.1258 \\
+         - Create two new species: the LocalAuthority and the Policy.
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1259 \\-
+           LocalAuthority decides the policy.
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1259 \\-
+           LocalAuthority decides the policy.
+? 
+[42 </home/duc/Pictures/complex_project_21.png (PNG copy)> </home/duc/Pictures/
+complex_project_22.png (PNG copy)>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1263 \\
          RESULT
 ? 
 
-Overfull \hbox (54.60132pt too wide) in paragraph at lines 1085--1086
+Overfull \hbox (54.60132pt too wide) in paragraph at lines 1270--1271
 [][][][][][][][][][][][][][][][][][] 
  []
 
-! Undefined control sequence.
-<output> {\lst@RestoreOrigCatcodes 
-                                   \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.1098 species 
-               local_authority{
-? 
-! Undefined control sequence.
-<output> ...ifec \lst@RestoreOrigExtendedCatcodes 
-                                                  \fi \lst@OrgOutput }
-l.1098 species 
-               local_authority{
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1098 species 
-               local_authority{
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1098 species 
-               local_authority{
-? 
-[35 </home/duc/Pictures/complex_project_22.png (PNG copy)>]
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 1103--1104
+
+Overfull \hbox (87.90143pt too wide) in paragraph at lines 1286--1287
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (32.40125pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (32.40125pt too wide) in paragraph at lines 1298--1299
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (87.90143pt too wide) in paragraph at lines 1122--1123
+Overfull \hbox (87.90143pt too wide) in paragraph at lines 1305--1306
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (4.65115pt too wide) in paragraph at lines 1146--1147
-[][][][][][][][][][][][][][][][][][] 
  []
 
 ! Undefined control sequence.
 <output> {\lst@RestoreOrigCatcodes 
                                    \lst@ifec \lst@RestoreOrigExtendedCatcode...
-l.1148 		value:
-                inhabitants count(each.is_exposed_state = true);
+l.1307 			count_policy_date 
+                            <- 0;
 ? 
 ! Undefined control sequence.
 <output> ...ifec \lst@RestoreOrigExtendedCatcodes 
                                                   \fi \lst@OrgOutput }
-l.1148 		value:
-                inhabitants count(each.is_exposed_state = true);
+l.1307 			count_policy_date 
+                            <- 0;
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1148 		value:
-                inhabitants count(each.is_exposed_state = true);
+l.1307 			count_policy_date 
+                            <- 0;
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1148 		value:
-                inhabitants count(each.is_exposed_state = true);
+l.1307 			count_policy_date 
+                            <- 0;
 ? 
-[36]
+[43]
+Overfull \hbox (4.65115pt too wide) in paragraph at lines 1329--1330
+[][][][][][][][][][][][][][][][][][] 
+ []
+
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1155 \end{lstlisting}
+l.1338 \end{lstlisting}
                        
 ? 
 
@@ -2492,7 +2572,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1156 \\
+l.1339 \\
           - I add two new species which are local\_authority and policies, p...
 
 ? 
@@ -2503,15 +2583,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1157 \\\\
+l.1340 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_23.png, id=149, 1215.79219pt x 576.65437pt>
+</home/duc/Pictures/complex_project_23.png, id=172, 1215.79219pt x 576.65437pt>
 
 File: /home/duc/Pictures/complex_project_23.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_23.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_23.png  used on inp
-ut line 1158.
+ut line 1341.
 (pdftex.def)             Requested size: 234.59747pt x 111.26367pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2520,10 +2600,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1160 \caption
+l.1343 \caption
                {Figure 23: Exploration M3\_1, all inhabitants get freedom law.}
 
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1343 \caption{F
+                 igure 23: Exploration M3\_1, all inhabitants get freedom law.}
+
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1343 \caption{F
+                 igure 23: Exploration M3\_1, all inhabitants get freedom law.}
+
+? 
+[44]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2531,14 +2626,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1161 \\\\
+l.1344 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_24.png, id=150, 1216.545pt x 540.51938pt>
+</home/duc/Pictures/complex_project_24.png, id=176, 1216.545pt x 540.51938pt>
 File: /home/duc/Pictures/complex_project_24.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_24.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_24.png  used on inp
-ut line 1162.
+ut line 1345.
 (pdftex.def)             Requested size: 234.59747pt x 104.23381pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2547,7 +2642,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1164 \caption
+l.1347 \caption
                {Figure 24: Exploration M3\_1, all inhabitants get lockschool...
 
 ? 
@@ -2558,15 +2653,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1165 \\\\
+l.1348 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_25.png, id=151, 1215.03937pt x 539.76656pt>
+</home/duc/Pictures/complex_project_25.png, id=177, 1215.03937pt x 539.76656pt>
 
 File: /home/duc/Pictures/complex_project_25.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_25.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_25.png  used on inp
-ut line 1166.
+ut line 1349.
 (pdftex.def)             Requested size: 234.59747pt x 104.21217pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2575,26 +2670,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1168 \caption
+l.1351 \caption
                {Figure 25: Exploration M3\_1, after three days local\_author...
 
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1168 \caption{F
-                 igure 25: Exploration M3\_1, after three days local\_author...
-
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1168 \caption{F
-                 igure 25: Exploration M3\_1, after three days local\_author...
-
-? 
-[37 </home/duc/Pictures/complex_project_23.png (PNG copy)> </home/duc/Pictures/
-complex_project_24.png (PNG copy)>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2602,14 +2681,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1169 \\\\
+l.1352 \\\\
            
 ? 
-</home/duc/Pictures/complex_project_26.png, id=156, 1217.2978pt x 530.73282pt>
+</home/duc/Pictures/complex_project_26.png, id=178, 1217.2978pt x 530.73282pt>
 File: /home/duc/Pictures/complex_project_26.png Graphic file (type png)
 <use /home/duc/Pictures/complex_project_26.png>
 Package pdftex.def Info: /home/duc/Pictures/complex_project_26.png  used on inp
-ut line 1170.
+ut line 1353.
 (pdftex.def)             Requested size: 234.59747pt x 102.28178pt.
 
 ! LaTeX Error: \caption outside float.
@@ -2618,43 +2697,62 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1172 \caption
+l.1355 \caption
                {Figure 26: Exploration M3\_1, freedom again !.}
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1174 \end{document}
+l.1357 \end{document}
                      
 ? 
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.1174 \end{document}
+l.1357 \end{document}
                      
 ? 
-[38 </home/duc/Pictures/complex_project_25.png (PNG copy)> </home/duc/Pictures/
-complex_project_26.png (PNG copy)>] (./report.aux) ) 
+[45 </home/duc/Pictures/complex_project_23.png (PNG copy)> </home/duc/Pictures/
+complex_project_24.png (PNG copy)> </home/duc/Pictures/complex_project_25.png (
+PNG copy)> </home/duc/Pictures/complex_project_26.png (PNG copy)>]
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1357 \end{document}
+                     
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1357 \end{document}
+                     
+? 
+[46] (./report.aux) )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 850 (\begingroup)
+### semi simple group (level 1) entered at line 846 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 12872 strings out of 483140
- 254570 string characters out of 5965152
- 504977 words of memory out of 5000000
- 27707 multiletter control sequences out of 15000+600000
+ 12913 strings out of 483140
+ 255096 string characters out of 5965152
+ 567976 words of memory out of 5000000
+ 27748 multiletter control sequences out of 15000+600000
  537544 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  59i,6n,75p,847b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (38 pages, 8922690 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (46 pages, 8933444 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -81,6 +81,7 @@ global{
 \\
 - dangerous\_distance: Is the perfect distance for virus go inside susceptible individual.
 \begin{tcolorbox}
+\\\\
 \begin{lstlisting}
 species individuals skills:[moving]{
 	bool is_infected <- false;
@@ -88,6 +89,15 @@ species individuals skills:[moving]{
 	rgb my_color <- #blue;
 	int count_date_expose <- 0;
 	int count_date_infectious <- 0;
+	etc..................
+}
+\end{lstlisting}
+\end{tcolorbox}
+\newpage
+\begin{tcolorbox}
+\begin{lstlisting}
+species individuals skills:[moving]{
+	etc..................
 	reflex move{
 		do wander speed: 1.0;
 	}
@@ -191,67 +201,64 @@ species individuals skills:[moving]{
 \end{pic4}
 \\\\
 \begin{pic5}
-\centering{\includegraphics[width=0.76\textwidth]{complex_project_5}}
+\centering{\includegraphics[width=0.70\textwidth]{complex_project_5}}
 \\
 \caption{Figure 5: Simulation of model M1\_1, all I individuals gradually chage to recovery individual.}
 \end{pic5}
 \\\\
 \begin{pic6}
-\centering{\includegraphics[width=0.76\textwidth]{complex_project_6}}
+\centering{\includegraphics[width=0.70\textwidth]{complex_project_6}}
 \\
 \caption{Figure 6: Simulation of model M1\_1, number of individuals who have I state increase very fast.}
 \end{pic6}
-\\\\
+\newpage
 \underline{\emph{Exploration}}
+\newline\newline
+\underline{\textit{E1.1. Effect of randomness:}}
 \\
-\textbf{Exploration E1.1. Effect of randomness:}
-\\
-Define a gui experiment, creating 10 experiments (with different seed values) and plot the evolution of the number of I individuals for each simulation.
-\\
+- Define a gui experiment, creating 10 experiments (with different seed values) and plot the evolution of the number of I individuals for each simulation.
+\newline\newline
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_1 type: gui{
-	parameter "Number of people: " var: number_of_people min:10 
-	max: 1000 step: 10;
+	parameter "Number of people: " var: number_of_people 
+	min:10 max: 1000 step: 10;
 	parameter "Number of infected people: " 
 	var: number_of_infected_people min: 1 max: 50 step: 10;
 	init{
-		create simulation with:[number_of_people::number_of_people,
+		create simulation with:[
+		number_of_people::number_of_people,
 		number_of_infected_people::number_of_infected_people
 		,seed::1];
-		create simulation with:[number_of_people::number_of_people,
+		create simulation with:[
+		number_of_people::number_of_people,
 		number_of_infected_people::number_of_infected_people
 		,seed::2];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::3];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::4];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::5];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::6];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::7];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people
-		,seed::8];
-		create simulation with:[number_of_people::number_of_people,
+		etc..................
+		create simulation with:[
+		number_of_people::number_of_people,
 		number_of_infected_people::number_of_infected_people
 		,seed::9];
-		create simulation with:[number_of_people::number_of_people,
+		create simulation with:[
+		number_of_people::number_of_people,
 		number_of_infected_people::number_of_infected_people
 		,seed::10];
 	}
+	etc..................
+}
+\end{lstlisting}
+\end{tcolorbox}
+\newpage
+\begin{tcolorbox}
+\begin{lstlisting}
+experiment E1_1 type: gui{
+	etc..................
 	output{
 		display E1_1{
 			chart "Ch" type:series{
 				datalist ["#S", "#E", "#I", "#R"] 
-				value: [individuals count (each.epidemic_state = "S"), 		
+				value: [individuals count (
+				each.epidemic_state = "S"), 		
 				individuals count (each.epidemic_state = "I"),			
 				individuals count (each.epidemic_state = "E"), 				
 				individuals count (each.epidemic_state = "R")] 
@@ -262,22 +269,34 @@ experiment E1_1 type: gui{
 }
 \end{lstlisting}
 \end{tcolorbox}
+\newline\newline
+\begin{doc}
 - I design an experiment that can simulate ten simulations one time, and each simulation have different seed like the requirement. In this experiment I want to discover the evolution of each state base on the number of individual.
-\\\\
-\includegraphics[width=0.90\textwidth]{complex_project_7}
+\end{doc}
+\newpage
+\begin{pic7}
+\centering{\includegraphics[width=0.90\textwidth]{complex_project_7}}
 \\
 \caption{Figure 7: Exploration E1\_1, ten experiments.}
+\end{pic7}
 \\\\
-\includegraphics[width=0.90\textwidth]{complex_project_8}
+\begin{pic8}
+\centering{\includegraphics[width=0.90\textwidth]{complex_project_8}}
 \\
 \caption{Figure 8: Exploration E1\_1, E cases increase, S cases decrease.}
+\end{pic8}
 \\
-\includegraphics[width=0.90\textwidth]{complex_project_9}
+\begin{pic9}
+\centering{\includegraphics[width=0.90\textwidth]{complex_project_9}}
 \\
 \caption{Figure 9: Exploration E1\_1, I cases appear.}
+\end{pic9}
+\newline\newline
+\underline{\textit{E1.2. Impact of the number of individuals.}}
 \\
-\textbf{Exploration E1.2. Impact of the number of individuals.}
 Define a gui experiment, creating 11 experiments, with the same seed value but with a number of individuals from 200 to 2000 (with a step of 200) and plot the evolution of the number of I individuals.
+\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_2 type: gui{
 	parameter "Number of people: " 
@@ -286,32 +305,59 @@ experiment E1_2 type: gui{
 	var: number_of_infected_people min: 1 max: 50 step: 10;
 	
 	init{
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
-		create simulation with:[number_of_people::number_of_people,
-		number_of_infected_people::number_of_infected_people,seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		
+		
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
+		create simulation with:[
+		number_of_people::number_of_people,
+		number_of_infected_people::number_of_infected_people,
+		seed::seed];
 	}
 	output{
 		display E1_2{
 			chart "Ch" type:series{
 				datalist ["#S", "#E", "#I", "#R"] 
-				value: [individuals count (each.epidemic_state = "S"), 					
+				value: [
+				individuals count (each.epidemic_state = "S"), 					
 				individuals count (each.epidemic_state = "E"),  					
 				individuals count (each.epidemic_state = "I"), 				
 				individuals count (each.epidemic_state = "R")] 		  					
@@ -322,25 +368,31 @@ experiment E1_2 type: gui{
 	}
 }
 \end{lstlisting}
-
+\end{tcolorbox}
+\newpage
 \\- I create 11 experiments which use the same seed and each experiment shows the number of people in four states, throw these experiment I can track the increase of people in four states, follow the instruction of requirement I create 200 to 2000 individuals to simulate the increase of people in each state and the increase step of number of people is 200.
 
-\\
-\includegraphics[width=0.90\textwidth]{complex_project_10}
+\begin{pic10}
+\centering{\includegraphics[width=0.90\textwidth]{complex_project_10}}
 \\
 \caption{Figure 10: Exploration E1\_2, eleven experiments use the same seed with the number of people from 200 to 2000.}
-\\
+\end{pic10}
 
-\textbf{Exploration E1.3. Impact of the number of individuals.}
+\newpage
+
+\underline{\textit{E1.3. Impact of the number of individuals.}}
 Define 2 indicators:
 - the cycle of the maximum number of infected peoples.
 - The duration of the epidemic (when the number of Exposed and Infected is
 0).
 Define a batch experiment plotting the evolution of these indicators in function
 of the number of peoples. Save these values in a csv file.
+\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_3 type: 
-batch until: (individuals count(each.epidemic_state="I") = 0) 
+batch until: (
+individuals count(each.epidemic_state="I") = 0) 
 and (individuals count(each.epidemic_state="E") = 0){
 	parameter "Number of people: " 
 	var: number_of_people min:200 max: 2000 step: 200;
@@ -348,7 +400,8 @@ and (individuals count(each.epidemic_state="E") = 0){
 	var: number_of_infected_people init:10 min: 10 max: 10;
 	init {
 		save ["Number of people","duration"] 
-		to: "data.csv" type: "csv" rewrite: true header: false;
+		to: "data.csv" type: "csv" rewrite: true 
+		header: false;
 	}
 	reflex saving{
 		ask simulations{
@@ -358,23 +411,28 @@ and (individuals count(each.epidemic_state="E") = 0){
 	}
 }
 \end{lstlisting}
+\end{tcolorbox}
 \section{Spread in a city with a heterogeneous \\population}
 \\- In this model, we will simulate the process of spreading desease in real environment. Therefore, we need to create the diversity of individual's attribute which bases on the attribute of human for example age, gender, actvity etc.
-\\
+\newpage
 \underline{\textbf{#Model M2}}
 \\
 \underline{\emph{Requirement}}
-\\
+\newline\newline
 - Import shape file or randomly generate shape files (use open street map).
 - Building should have a type among: Home, office, school, shops, coffee, restaurant, park.
 - Can generate building randomly in GAMA at inisialisation.
 - Display the buildings with their own colour which bases on their type.
-\\
+\newline\newline
 \underline{\emph{Result}}\\
+\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 global{
-	shape_file buildings0_shape_file <- shape_file("../includes/buildings.shp");
-	shape_file clean_roads0_shape_file <- shape_file("../includes/clean_roads.shp");
+	shape_file buildings0_shape_file <- 
+	shape_file("../includes/buildings.shp");
+	shape_file clean_roads0_shape_file <- 
+	shape_file("../includes/clean_roads.shp");
 	geometry shape <- envelope(clean_roads0_shape_file);
 	graph road_graph;
 	int number_of_inhabitant <- 150;
@@ -405,6 +463,10 @@ global{
 			else if(is_old = true){
 				my_age <- rnd(56, 100);
 			}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 			//Random gender
 			rdGender <- rnd(0,1);
 			my_gender <- genderChoiceList[rdGender];
@@ -417,7 +479,6 @@ global{
 		}
 		// create infected people
 		loop i from: 0 to: number_people_infected - 1{
-		write "number_people_infected: "+number_people_infected;
 			ask one_of(inhabitants){
 				write "i:" + i;
 				self.is_susceptible_state <- false;
@@ -427,7 +488,8 @@ global{
 			}
 		}
 		create buildings from: buildings0_shape_file{
-			var <- [#darkgrey,#yellow,#green,#brown,#orange,#blue,#purple];
+			var <- 
+			[#darkgrey,#yellow,#green,#brown,#orange,#blue,#purple];
 			rdIndex <- rnd(0,6);
 			my_color <- var[rdIndex];
 			if(my_color = #darkgrey){
@@ -441,7 +503,8 @@ global{
 					loop index from: 0 to: number_of_male_adult{
 						ask one_of(inhabitants where(each.is_adult = true 
 						and each.my_gender="male")){
-							if(self.location != myself.location and self.have_home = false){
+							if(self.location != myself.location 
+							and self.have_home = false){
 								self.location <- any_location_in(myself);
 								self.have_home <- true;
 								self.houseLocation <- location;
@@ -449,10 +512,15 @@ global{
 							}
 						}
 					}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 					loop index from: 0 to: number_of_female_adult{
 						ask one_of(inhabitants where(each.is_adult = true 
 						and each.my_gender="female")){
-							if(self.location != myself.location and self.have_home = false){
+							if(self.location != myself.location 
+							and self.have_home = false){
 								self.location <- any_location_in(myself);
 								self.have_home <- true;
 								self.houseLocation <- location;
@@ -463,7 +531,8 @@ global{
 					loop index from: 0 to: number_of_grand_father{
 						ask one_of(inhabitants where(each.is_old = true 
 						and each.my_gender="male")){
-							if(self.location != myself.location and self.have_home = false){
+							if(self.location != myself.location 
+							and self.have_home = false){
 								self.location <- any_location_in(myself);
 								self.have_home <- true;
 								self.houseLocation <- location;
@@ -474,7 +543,8 @@ global{
 					loop index from: 0 to: number_og_grand_mother{
 						ask one_of(inhabitants where(each.is_old = true 
 						and each.my_gender="female")){
-							if(self.location != myself.location and self.have_home = false){
+							if(self.location != myself.location 
+							and self.have_home = false){
 								self.location <- any_location_in(myself);
 								self.have_home <- true;
 								self.houseLocation <- location;
@@ -497,6 +567,10 @@ global{
 					number_of_grand_father + number_og_grand_mother;
 				}
 			}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 			else if(my_color = #yellow){
 				is_workspace <- true;
 			}
@@ -528,21 +602,31 @@ global{
 		buildings school;
 		buildings gorcery;
 		loop i from: 0 to: number_of_inhabitant {
-			ask one_of(inhabitants){
-					workspace <- one_of(buildings where(each.is_workspace = true));
-					park <- one_of(buildings where(each.is_park = true));
-					coffeeshop <- one_of(buildings where(each.is_coffeeshop = true));
-					restaurant <- one_of(buildings where(each.is_restaurant = true));
-					school <- one_of(buildings where(each.is_school = true));
-					gorcery <- one_of(buildings where(each.is_gorcery = true));
-					
-					workLocation <- any_location_in(workspace);
-					parkLocation <- any_location_in(park);
-					coffeeLocation <- any_location_in(coffeeshop);
-					restaurantLocation <- any_location_in(restaurant);
-					schoolLocation <- any_location_in(school);
-					gorceryLocation <- any_location_in(gorcery);
-				}
+		ask one_of(inhabitants){
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
+				workspace <- one_of(buildings 
+				where(each.is_workspace = true));
+				park <- one_of(buildings 
+				where(each.is_park = true));
+				coffeeshop <- one_of(buildings 
+				where(each.is_coffeeshop = true));
+				restaurant <- one_of(buildings 
+				where(each.is_restaurant = true));
+				school <- one_of(buildings 
+				where(each.is_school = true));
+				gorcery <- one_of(buildings 
+				where(each.is_gorcery = true));
+				
+				workLocation <- any_location_in(workspace);
+				parkLocation <- any_location_in(park);
+				coffeeLocation <- any_location_in(coffeeshop);
+				restaurantLocation <- any_location_in(restaurant);
+				schoolLocation <- any_location_in(school);
+				gorceryLocation <- any_location_in(gorcery);
+			}
 		}
 	}
 	reflex dd{
@@ -552,13 +636,17 @@ global{
 	}
 }
 \end{lstlisting}
-\\- "create inhabitants number\_of\_inhabitant", "create buildings from: buildings0\_shape\_file", "create roads from: clean\_roads0\_shape\_file;": in global initialization I create three species which are inhabitants or individuals, buildings, roads. In inhabitans I add some attributes like age, gender. To create infected people I use a loop. Beside, I create the colour for each individual base on their age. the shape files are imported to both species, with road I use default information in the shape file but I need to modify and add some attributes of builfdings. After creating all inhabitans, I put inhabitant in the building and each building have four to seven people, buildings also have colour base on their type.
+\end{tcolorbox}
+\newline
+\newline- "create inhabitants number\_of\_inhabitant", "create buildings from: buildings0\_shape\_file", "create roads from: clean\_roads0\_shape\_file;": in global initialization I create three species which are inhabitants or individuals, buildings, roads. In inhabitans I add some attributes like age, gender. To create infected people I use a loop. Beside, I create the colour for each individual base on their age. the shape files are imported to both species, with road I use default information in the shape file but I need to modify and add some attributes of builfdings. After creating all inhabitans, I put inhabitant in the building and each building have four to seven people, buildings also have colour base on their type.
 \\
-\includegraphics[width=0.90\textwidth]{complex_project_11}
+\begin{pic11}
+\centering{\includegraphics[width=0.90\textwidth]{complex_project_11}}
 \\
 \caption{Figure 11: Exploration M2\_1, the city after importing the shape files, each building have their own colour base on their type, inhabitants are small circle with plenty of colout to distinguish the age of each inhabitant.} 
+\end{pic11}
 \\\\
-\large{\textbf{Inhabitant species}}
+\begin{tcolorbox}
 \begin{lstlisting}
 species inhabitants skills:[moving]{
     list ageColorList <- [#aqua,#lawngreen,#mediumorchid];
@@ -582,6 +670,10 @@ species inhabitants skills:[moving]{
 	point houseLocation;
 	point workLocation;
 	point coffeeLocation;
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	point schoolLocation;
 	point parkLocation;
 	point restaurantLocation;
@@ -611,7 +703,8 @@ species inhabitants skills:[moving]{
 		do goto target: target on: road_graph;
 	}
 	//Kid schedule
-	reflex goToSchool when: (is_kid = true and current_date.hour = 7){
+	reflex goToSchool when: (is_kid = true 
+	and current_date.hour = 7){
 		target <- schoolLocation;
 		do goto target: target on: road_graph;
 		if(location = target){
@@ -626,6 +719,10 @@ species inhabitants skills:[moving]{
 			target <- houseLocation;
 		}
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	//Retire people/ old people
 	reflex oldPlpGoToPark when: (is_old = true 
 	and (current_date.hour = 5 or current_date.hour = 16)){
@@ -672,6 +769,10 @@ species inhabitants skills:[moving]{
 		count_date_expose <- 0;
 		count_date_infectious <- 0;
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	reflex infect when:(epidemic_state = "I"){
 		buildings my_location <- 
 		first(buildings overlapping(self));
@@ -721,57 +822,95 @@ species inhabitants skills:[moving]{
 	}
 }
 \end{lstlisting}
+\end{tcolorbox}
 \\- Each inhabitants have their own calendar so they can move every location that is chose in initalization section. I still use four action to describe the process of desease and they are "dynamicTurnBad", "dynamicTurnGood", "increaseExposeDate", "increaseInfectiousDate"; The different here is the action infect rather than infecting outside, in this model the virus will be transmitted inside a building which they live. Therefore I need to modify this action, first my model will find all the inhabitans who is susceptible inhabitant by using overlapping built-in function, second the process of transmitting desease start, all the inhabitants in the buiding which infected inhabitants stay will be infected.
 \\
-\includegraphics[width=0.70\textwidth]{complex_project_12}
+\begin{pic12}
+\centering{\includegraphics[width=0.70\textwidth]{complex_project_12}}
 \\
 \caption{Figure 12: Exploration M2\_1 + M2\_2, some individuals with purple colour are moving outside.} 
+\end{pic12}
 \\
-\includegraphics[width=0.68\textwidth]{complex_project_13}
+\begin{pic13}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_13}}
 \\
 \caption{Figure 13: Exploration M2\_1 + M2\_2, all inhabitants stay with the infected inhabitants become exposed inhabitants and they will become infected inhabitant after they reach the E duration(From 3 to 10 days).} 
+\end{pic13}
 \\
-\includegraphics[width=0.68\textwidth]{complex_project_14}
+\begin{pic14}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_14}}
 \\
 \caption{Figure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants become infected inhabitants.} 
+\end{pic14}
 \\
+\begin{pic15}
 \includegraphics[width=0.70\textwidth]{complex_project_15}
 \\
 \caption{Figure 15: Exploration M2\_1 + M2\_2, all infected inhabitants become recovery inhabitants after they reach the I duration(From 10 to 30 days).} 
-\\\\
-\textbf{Exploration E2.1. Effect of randomness:}
+\begin{pic15}
+\newpage
+\underline{\textit{E2.1. Effect of randomness:}}
 \\- Following the requirement, I need to create an experiment which is as same as E1.1. In this experiment, I can track the increase of people in each state and also the speed of the process of spreading dease in real environment.
+\begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_1 type: gui{
-	parameter "Number of people: " var: number_of_inhabitant min:10 max: 1000 step: 10;
-	parameter "Number of infected people: " var: number_people_infected min: 5 max: 50 step: 10;
+	parameter "Number of people: " 
+	var: number_of_inhabitant min:10 max: 1000 step: 10;
+	parameter "Number of infected people: " 
+	var: number_people_infected min: 5 max: 50 step: 10;
 	
 	init{
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::1];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::2];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::3];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::4];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::5];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::6];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::7];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::8];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::9];
-		create simulation with:[number_of_inhabitant::number_of_inhabitant,
-		number_people_infected::number_people_infected,seed::10];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::1];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::2];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::3];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::4];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::5];
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::6];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::7];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::8];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::9];
+		create simulation with:[
+		number_of_inhabitant::number_of_inhabitant,
+		number_people_infected::number_people_infected,
+		seed::10];
 	}
 	output{
 		display E1_1{
 			chart "Ch" type:series{
-				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.epidemic_state = "S"), 
+				datalist ["#S", "#E", "#I", "#R"] 
+				value: [inhabitants count (
+				each.epidemic_state = "S"), 
 				inhabitants count (each.epidemic_state = "E"), 
 				inhabitants count (each.epidemic_state = "I"), 
 				inhabitants count (each.epidemic_state = "R")] 
@@ -782,16 +921,20 @@ experiment E2_1 type: gui{
 	}
 }
 \end{lstlisting}
-\\\\\\
+\end{tcolorbox}
+\newpage
 \underline{\textbf{#Model M2\_3}}\\
-\underline{\emph{Requirement}}\\
+\newline\newline
+\underline{\emph{Requirement}}
+\newline\newline
 - Building contains a household. (Actually I do this model first and I reuse it to the M2\_1 and M2\_2 so you can see the initialization for household in both model)
 \\
 - Randomly choosing the role of each people in the household for example: father, mother, kid, grand mother, grand father.
 \\
 - Creating an agenda for each inhabitant who is living in the same house. (Follow the calendar of requirement).
-\\
-\underline{\emph{Result}}\\
+\newline\newline
+\underline{\emph{Result}}\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 species inhabitants skills:[moving]{
 	reflex infect when:(epidemic_state = "I"){
@@ -812,21 +955,28 @@ species inhabitants skills:[moving]{
 			species inhabitants aspect: goem;
 		}
 		monitor "nb susceptible people" 
-		value: inhabitants count(each.is_susceptible_state = true);
+		value: inhabitants count(
+		each.is_susceptible_state = true);
 		monitor "nb exposed people" 
-		value: inhabitants count(each.is_exposed_state = true);
+		value: inhabitants count(
+		each.is_exposed_state = true);
 		monitor "nb infected people" 
-		value: inhabitants count(each.is_infected_state = true);
+		value: inhabitants count(
+		each.is_infected_state = true);
 		}
 	}
 }
 \end{lstlisting}
+\end{tcolorbox}
+\newpage
 \\- I still use the source code of model M2\_1 and M2\_2 and the diffent is I add the new action which is infect action which allow the I inhabitans infect the S inhabitants when they have the same range of distance.
-\\\\
+\newline\newline
 \underline{\emph{Exploration}}
-\\
-\textbf{Exploration E2.2. Population characteristics.}
+\newline\newline
+\underline{\textit{E2.2. Population characteristics.}}
 \\- Define a gui experiment, plotting (with histograms for example) the ratio male-female, the population distribution in terms of age and in terms on number of people.
+\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_2{
 	output{
@@ -851,63 +1001,85 @@ experiment E2_2{
 			}
 		}
 		monitor "nb susceptible people" 
-		value: inhabitants count(each.is_susceptible_state = true);
+		value: inhabitants 
+		count(each.is_susceptible_state = true);
 		monitor "nb exposed people" 
-		value: inhabitants count(each.is_exposed_state = true);
+		value: inhabitants 
+		count(each.is_exposed_state = true);
 		monitor "nb infected people" 
-		value: inhabitants count(each.is_infected_state = true);
+		value: inhabitants 
+		count(each.is_infected_state = true);
 	}
 }
 \end{lstlisting}
+\end{tcolorbox}
+\newpage
 \\- In this exploration, the system will create gender histogram and also the age histogram. The gender histogram allows me to see how many female and male inhabitant in our model and the age histogram shows the number of people in each group of age and there are adult, old, kid.
 \\
-\includegraphics[width=0.65\textwidth]{complex_project_17}
+\begin{pic16}
+\centering{\includegraphics[width=0.65\textwidth]{complex_project_17}}
 \\
 \caption{Figure 16: Exploration E2\_2, graph of gender.} 
+\end{pic16}
 \\
-\includegraphics[width=0.65\textwidth]{complex_project_16}
+\begin{pic17}
+\centering{\includegraphics[width=0.65\textwidth]{complex_project_16}}
 \\
 \caption{Figure 17: Exploration E2\_2, graph of age.} 
-\\\\\\
-\textbf{Exploration E2.3. Epidemic plotting. Define an experiment to plot epidemic spread (number of individuals in each states).}
+\end{pic17}
+\newpage
+\underline{\textit{E2.3. Epidemic plotting. Define an experiment to plot epidemic spread.}}
+\begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_3{
 	output{
 		display Epidemic_plotting {
-			chart "States of the agents" type: series style: line {
+			chart "States of the agents" 
+			type: series style: line {
 				datalist ["#S", "#E", "#I", "#R"] 
-				value: [inhabitants count (each.is_susceptible_state = true), 
-				inhabitants count (each.is_exposed_state = true), 
-				inhabitants count (each.is_infected_state = true), 
-				inhabitants count (each.is_recovery_state = true)] 
+				value: [inhabitants 
+				count (each.is_susceptible_state = true), 
+				inhabitants 
+				count (each.is_exposed_state = true), 
+				inhabitants 
+				count (each.is_infected_state = true), 
+				inhabitants 
+				count (each.is_recovery_state = true)] 
 				color: [#blue, #gold, #red, #lightblue];
 			}
 		}
 		monitor "nb susceptible people" 
-		value: inhabitants count(each.is_susceptible_state = true);
+		value: inhabitants 
+		count(each.is_susceptible_state = true);
 		monitor "nb exposed people" 
-		value: inhabitants count(each.is_exposed_state = true);
+		value: inhabitants 
+		count(each.is_exposed_state = true);
 		monitor "nb infected people" 
-		value: inhabitants count(each.is_infected_state = true);
+		value: inhabitants 
+		count(each.is_infected_state = true);
 	}
 }
 \end{lstlisting}
-\pagebreak
+\end{tcolorbox}
+\newpage
 - To discover the epidemic I create an experiment which can count all the case in each state.
-\\\\
-\includegraphics[width=0.70\textwidth]{complex_project_18}
+\newline\newline
+\begin{pic18}
+\centering{\includegraphics[width=0.70\textwidth]{complex_project_18}}
 \\
 \caption{Figure 18: Exploration E2\_3, number of peoples in each state.} 
-\\\\\\
+\end{pic18}
+\newline\newline
 \underline{\textbf{#Model M2.4}}
-\\
+\newline\newline
 \underline{\emph{Requirement}}
 \\- Model can simulate the life circle of virus in the environment.
 \\- People can be infected even they don't contact with infected people.
 \\- Modify building which can load virus. The number of virus increase when infected people are in building and decrease over time.
-\\
+\newline\newline
 \underline{\emph{Result}}\\
 - In this model, I add one species and it is virus. Virus can life in the environment few days and it can infect people. rather than move function I use wander to describe the complex when viruses move around. To count the day of virus's life circle I create an action which count the day in viruses life circle. I also modify buildings species to make sure that can become the virus load.
+\begin{tcolorbox}
 \begin{lstlisting}
 species virus skills:[moving]{
 	rgb my_color <- #red;
@@ -944,9 +1116,6 @@ species virus skills:[moving]{
 		draw triangle(4) color: my_color;
 	}
 }
-\end{lstlisting}
-\\
-\begin{lstlisting}
 species buildings{
 	list var;
 	int rdIndex;
@@ -955,6 +1124,10 @@ species buildings{
 	bool is_workspace <- false;
 	bool is_park <- false;
 	bool is_coffeeshop <- false;
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	bool is_restaurant <- false;
 	bool is_school <- false;
 	bool is_gorcery <- false;
@@ -999,6 +1172,10 @@ species buildings{
 	reflex death when: count_life_time = 48{
 		nb_virus <- 0;
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	reflex count_life_time when: has_virus = true{
 		if(count_life_time = 48){
 			count_life_time <- 0;
@@ -1043,29 +1220,39 @@ species buildings{
 	}
 }
 \end{lstlisting}
-\\
+\end{tcolorbox}
+\newline\newline
 
-\\
-\includegraphics[width=0.68\textwidth]{complex_project_19}
+\begin{pic19}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_19}}
 \\
 \caption{Figure 19: Exploration M2\_4, a triangle is the virus in the environment.} 
+\end{pic19}
 \\
-\includegraphics[width=0.68\textwidth]{complex_project_20}
+\begin{pic20}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_20}}
 \\
 \caption{Figure 20: Exploration M2\_4, E inhabitants become I inhabitants and the places where become black colour that means infected inhabitant went to these places.} 
-\\
+\end{pic20}
+\newpage
 \underline{\emph{Exploration}}
-\\\textbf{Exploration M2\_4. comparing the disease spread with and without environmental transmission.}
-\\- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3.
+\newline\newline
+\underline{\textit{E2.4. comparing the disease spread with and without environmental transmission.}}
+\newline\newline
+- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3.
 \\- The speed and also the number of people in exploration of M2\_4 is clearly higher than the number in exploration of M2\_5, the reason is in the model M2\_4 we have the feature that allows virus can be transmitted in the environment so it enhances the number of exposed inhabitant very fast.
 \\\\
-\includegraphics[width=0.68\textwidth]{complex_project_21}
+\begin{pic21}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_21}}
 \\
 \caption{Figure 21: Exploration E2\_3, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the fifth day.} 
+\end{pic21}
 \\\\
-\includegraphics[width=0.68\textwidth]{complex_project_22}
+\begin{pic22}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_22}}
 \\
 \caption{Figure 22: Exploration E2\_4, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the second day, it also increases very fast because of environmental transmission feature.} 
+\end{pic22}
 \\
 \section{Public health policy}
 \\- Create two new species: the LocalAuthority and the Policy.
@@ -1078,8 +1265,6 @@ species buildings{
 \begin{lstlisting}
 global{
 	etc..................
-	.....................
-	..................etc
 	int number_of_policy <- 4;
 	int policy_index <- 0;
 	list list_of_policy <- ["lockdown","lockage","lockschool","wearmask"];
@@ -1092,8 +1277,6 @@ global{
 	}
 	create local_authority number: 1;
 	etc..................
-	.....................
-	..................etc
 }
 species local_authority{
 	reflex checkPolicyDate when: law != "freedom"{

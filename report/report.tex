@@ -4,6 +4,12 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox}
 \graphicspath{ {/home/duc/Pictures/} }
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
 \title{Report Modelling And Simulation Complex Model 2021
         \linebreak
         \\Subject:  spread of COVID-19 in a city and control policy}
@@ -214,7 +220,7 @@ species individuals skills:[moving]{
 \newpage
 \underline{\emph{Exploration}}
 \newline\newline
-\underline{\textit{E1.1. Effect of randomness:}}
+\underline{\textit{E1\_1. Effect of randomness:}}
 \\
 - Define a gui experiment, creating 10 experiments (with different seed values) and plot the evolution of the number of I individuals for each simulation.
 \newline\newline
@@ -292,7 +298,7 @@ experiment E1_1 type: gui{
 \caption{Figure 9: Exploration E1\_1, I cases appear.}
 \end{pic9}
 \newline\newline
-\underline{\textit{E1.2. Impact of the number of individuals.}}
+\underline{\textit{E1\_2. Impact of the number of individuals.}}
 \\
 Define a gui experiment, creating 11 experiments, with the same seed value but with a number of individuals from 200 to 2000 (with a step of 200) and plot the evolution of the number of I individuals.
 \newline\newline
@@ -380,7 +386,7 @@ experiment E1_2 type: gui{
 
 \newpage
 
-\underline{\textit{E1.3. Impact of the number of individuals.}}
+\underline{\textit{E1\_3. Impact of the number of individuals.}}
 Define 2 indicators:
 - the cycle of the maximum number of infected peoples.
 - The duration of the epidemic (when the number of Exposed and Infected is
@@ -415,7 +421,7 @@ and (individuals count(each.epidemic_state="E") = 0){
 \section{Spread in a city with a heterogeneous \\population}
 \\- In this model, we will simulate the process of spreading desease in real environment. Therefore, we need to create the diversity of individual's attribute which bases on the attribute of human for example age, gender, actvity etc.
 \newpage
-\underline{\textbf{#Model M2}}
+\underline{\textbf{#Model M2\_1, M2\_2}}
 \\
 \underline{\emph{Requirement}}
 \newline\newline
@@ -440,6 +446,10 @@ global{
 	date starting_date <- date([2021,1,2,0,0,0]);
 	int pandemic_duration <- 0;
 	int number_people_infected <- 30;
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	init{
 		create inhabitants number: number_of_inhabitant{
 			//Get random age
@@ -463,10 +473,6 @@ global{
 			else if(is_old = true){
 				my_age <- rnd(56, 100);
 			}
-\end{lstlisting}
-\end{tcolorbox}
-\begin{tcolorbox}
-\begin{lstlisting}
 			//Random gender
 			rdGender <- rnd(0,1);
 			my_gender <- genderChoiceList[rdGender];
@@ -487,9 +493,14 @@ global{
 				self.epidemic_state <- "E";
 			}
 		}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 		create buildings from: buildings0_shape_file{
 			var <- 
-			[#darkgrey,#yellow,#green,#brown,#orange,#blue,#purple];
+			[#darkgrey,#yellow,#green,
+			#brown,#orange,#blue,#purple];
 			rdIndex <- rnd(0,6);
 			my_color <- var[rdIndex];
 			if(my_color = #darkgrey){
@@ -501,8 +512,22 @@ global{
 					int number_of_grand_father <- 1;
 					int number_og_grand_mother <- 1;
 					loop index from: 0 to: number_of_male_adult{
-						ask one_of(inhabitants where(each.is_adult = true 
+						ask one_of(inhabitants 
+						where(each.is_adult = true 
 						and each.my_gender="male")){
+							if(self.location != myself.location 
+							and self.have_home = false){
+								self.location <- any_location_in(myself);
+								self.have_home <- true;
+								self.houseLocation <- location;
+								break;
+							}
+						}
+					}
+					loop index from: 0 to: number_of_female_adult{
+						ask one_of(inhabitants 
+						where(each.is_adult = true 
+						and each.my_gender="female")){
 							if(self.location != myself.location 
 							and self.have_home = false){
 								self.location <- any_location_in(myself);
@@ -516,20 +541,9 @@ global{
 \end{tcolorbox}
 \begin{tcolorbox}
 \begin{lstlisting}
-					loop index from: 0 to: number_of_female_adult{
-						ask one_of(inhabitants where(each.is_adult = true 
-						and each.my_gender="female")){
-							if(self.location != myself.location 
-							and self.have_home = false){
-								self.location <- any_location_in(myself);
-								self.have_home <- true;
-								self.houseLocation <- location;
-								break;
-							}
-						}
-					}
 					loop index from: 0 to: number_of_grand_father{
-						ask one_of(inhabitants where(each.is_old = true 
+						ask one_of(inhabitants 
+						where(each.is_old = true 
 						and each.my_gender="male")){
 							if(self.location != myself.location 
 							and self.have_home = false){
@@ -553,7 +567,8 @@ global{
 						}
 					}
 					loop index from: 0 to: number_of_child{
-						ask one_of(inhabitants where(each.is_kid = true )){
+						ask one_of(inhabitants 
+						where(each.is_kid = true )){
 							if(self.location != myself.location 
 							and self.have_home = false){
 								self.location <- any_location_in(myself);
@@ -563,8 +578,11 @@ global{
 							}
 						}
 					}
-					nb_people <- number_of_child + number_of_male_adult + number_of_female_adult + 
-					number_of_grand_father + number_og_grand_mother;
+					nb_people 
+					<- number_of_child + number_of_male_adult 
+					+ number_of_female_adult + 
+					number_of_grand_father + 
+					number_og_grand_mother;
 				}
 			}
 \end{lstlisting}
@@ -603,15 +621,16 @@ global{
 		buildings gorcery;
 		loop i from: 0 to: number_of_inhabitant {
 		ask one_of(inhabitants){
-\end{lstlisting}
-\end{tcolorbox}
-\begin{tcolorbox}
-\begin{lstlisting}
+
 				workspace <- one_of(buildings 
 				where(each.is_workspace = true));
 				park <- one_of(buildings 
 				where(each.is_park = true));
 				coffeeshop <- one_of(buildings 
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 				where(each.is_coffeeshop = true));
 				restaurant <- one_of(buildings 
 				where(each.is_restaurant = true));
@@ -849,7 +868,7 @@ species inhabitants skills:[moving]{
 \caption{Figure 15: Exploration M2\_1 + M2\_2, all infected inhabitants become recovery inhabitants after they reach the I duration(From 10 to 30 days).} 
 \begin{pic15}
 \newpage
-\underline{\textit{E2.1. Effect of randomness:}}
+\underline{\textit{E2\_1. Effect of randomness:}}
 \\- Following the requirement, I need to create an experiment which is as same as E1.1. In this experiment, I can track the increase of people in each state and also the speed of the process of spreading dease in real environment.
 \begin{tcolorbox}
 \begin{lstlisting}
@@ -973,7 +992,7 @@ species inhabitants skills:[moving]{
 \newline\newline
 \underline{\emph{Exploration}}
 \newline\newline
-\underline{\textit{E2.2. Population characteristics.}}
+\underline{\textit{E2\_2. Population characteristics.}}
 \\- Define a gui experiment, plotting (with histograms for example) the ratio male-female, the population distribution in terms of age and in terms on number of people.
 \newline\newline
 \begin{tcolorbox}
@@ -983,8 +1002,10 @@ experiment E2_2{
 		display Population_gender {
 			chart "Population gender" type: histogram {
 				datalist ["Male", "Female"] 
-				value:[length(inhabitants where(each.my_gender="male")), 
-				length(inhabitants where(each.my_gender="female"))];
+				value:[length(inhabitants 
+				where(each.my_gender="male")), 
+				length(inhabitants 
+				where(each.my_gender="female"))];
 			}								
 		}
 		display Population_by_age {
@@ -1000,6 +1021,10 @@ experiment E2_2{
 				  ];
 			}
 		}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 		monitor "nb susceptible people" 
 		value: inhabitants 
 		count(each.is_susceptible_state = true);
@@ -1013,7 +1038,7 @@ experiment E2_2{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\newpage
+\\
 \\- In this exploration, the system will create gender histogram and also the age histogram. The gender histogram allows me to see how many female and male inhabitant in our model and the age histogram shows the number of people in each group of age and there are adult, old, kid.
 \\
 \begin{pic16}
@@ -1028,7 +1053,7 @@ experiment E2_2{
 \caption{Figure 17: Exploration E2\_2, graph of age.} 
 \end{pic17}
 \newpage
-\underline{\textit{E2.3. Epidemic plotting. Define an experiment to plot epidemic spread.}}
+\underline{\textit{E2\_3. Epidemic plotting. Define an experiment to plot epidemic spread.}}
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_3{
@@ -1062,15 +1087,14 @@ experiment E2_3{
 \end{lstlisting}
 \end{tcolorbox}
 \newpage
-- To discover the epidemic I create an experiment which can count all the case in each state.
-\newline\newline
+\raggedright- To discover the epidemic I create an experiment which can count all the case in each state.
 \begin{pic18}
 \centering{\includegraphics[width=0.70\textwidth]{complex_project_18}}
 \\
 \caption{Figure 18: Exploration E2\_3, number of peoples in each state.} 
 \end{pic18}
 \newline\newline
-\underline{\textbf{#Model M2.4}}
+\underline{\textbf{#Model M2\_4}}
 \newline\newline
 \underline{\emph{Requirement}}
 \\- Model can simulate the life circle of virus in the environment.
@@ -1237,10 +1261,11 @@ species buildings{
 \newpage
 \underline{\emph{Exploration}}
 \newline\newline
-\underline{\textit{E2.4. comparing the disease spread with and without environmental transmission.}}
-\newline\newline
-- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3.
-\\- The speed and also the number of people in exploration of M2\_4 is clearly higher than the number in exploration of M2\_5, the reason is in the model M2\_4 we have the feature that allows virus can be transmitted in the environment so it enhances the number of exposed inhabitant very fast.
+\underline{\textit{E2\_4. comparing the disease spread with and without environmental transmission.}}
+
+\raggedright- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3
+\\
+\raggedright- The speed and also the number of people in exploration of M2\_4 is clearly higher than the number in exploration of M2\_5, the reason is in the model M2\_4 we have the feature that allows virus can be transmitted in the environment so it enhances the number of exposed inhabitant very fast.
 \\\\
 \begin{pic21}
 \centering{\includegraphics[width=0.68\textwidth]{complex_project_21}}
@@ -1259,15 +1284,17 @@ species buildings{
 \\- LocalAuthority decides the policy.
 \\- The policy can be trigger by time, infected inhabitants appear etc.
 \\- The policy is listed in the requirement.
-
-\\RESULT
-\\
+\newline\newline
+\underline{\emph{Result}}
+\newline\newline
+\begin{tcolorbox}
 \begin{lstlisting}
 global{
 	etc..................
 	int number_of_policy <- 4;
 	int policy_index <- 0;
-	list list_of_policy <- ["lockdown","lockage","lockschool","wearmask"];
+	list list_of_policy 
+	<- ["lockdown","lockage","lockschool","wearmask"];
 	string law <- "freedom";
 	float infect_prop <- 0.0;
 	int count_policy_date <- 0;
@@ -1283,26 +1310,34 @@ species local_authority{
 		// one day is 24 hour -> 3 days is 72 hour
 		// one day is 24 hour -> 10 days is 240 hour
 		// one day is 24 hour -> 30 days is 720 hour
-		if(count_policy_date >= 72){// for testing: 3 days for one policy 72 hours
+		if(count_policy_date >= 72){
+		// for testing: 3 days for one policy 72 hours
 			law <- "freedom"; // Change to freedom state
 		}
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	reflex searchPolicy 
 	when: law = "freedom" 
-	and inhabitants count(each.is_infected_state = true) > 1{
+	and inhabitants 
+	count(each.is_infected_state = true) > 1{
 	//Check, can we free all inhabitants ?
 		ask one_of(policies){
 			law <- self.policy;
 		}
 		if (law = "wearmask"){
-		//The propability of disease transmit when inhabitant wears mask
+		//The propability of disease transmit 
+		//when inhabitant wears mask
 			infect_prop <- 0.5; 
 		}
 		else{
 			infect_prop <- 0.0;
 		}
 	}
-	reflex increasePolicyDuration when: law != "freedom"{// count law's duration
+	reflex increasePolicyDuration when: law != "freedom"{
+	// count law's duration
 		if(count_policy_date = 72){
 			count_policy_date <- 0;
 		}
@@ -1325,35 +1360,51 @@ experiment M3_1{
 			species inhabitants aspect: goem;
 			species virus aspect: goem;
 		}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 		monitor "nb susceptible people" 
-		value: inhabitants count(each.is_susceptible_state = true);
+		value: inhabitants 
+		count(each.is_susceptible_state = true);
 		monitor "nb exposed people" 
-		value: inhabitants count(each.is_exposed_state = true);
+		value: inhabitants 
+		count(each.is_exposed_state = true);
 		monitor "nb infected people" 
-		value: inhabitants count(each.is_infected_state = true);
+		value: inhabitants 
+		count(each.is_infected_state = true);
 		monitor "nb recovery people" 
-		value: inhabitants count(each.is_recovery_state = true);
+		value: inhabitants 
+		count(each.is_recovery_state = true);
 	}
 }
 \end{lstlisting}
+\end{tcolorbox}
 \\ - I add two new species which are local\_authority and policies, polices contain all the laws in the list\_of\_policy. Beside, the local\_authority choose the suitable law, the decision of this species is based on the number of infected case when the number of infected case is higher than one local\_authority will promulgate the law, to control the date of the law I create the action which start counting the date when the law is executed. I also modify the action of inhabitants species so that they can execute action base on the global variable law.
-\\\\
-\includegraphics[width=0.68\textwidth]{complex_project_23}
+\newpage
+\begin{pic23}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_23}}
 \\
 \caption{Figure 23: Exploration M3\_1, all inhabitants get freedom law.} 
-\\\\
-\includegraphics[width=0.68\textwidth]{complex_project_24}
+\end{pic23}
+\newline\newline
+\begin{pic24}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_24}}
 \\
 \caption{Figure 24: Exploration M3\_1, all inhabitants get lockschool law when it finds out the infected case.} 
-\\\\
-\includegraphics[width=0.68\textwidth]{complex_project_25}
+\end{pic24}
+\newline\newline
+\begin{pic25}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_25}}
 \\
 \caption{Figure 25: Exploration M3\_1, after three days local\_authority will consider to change the law bases on the desease situation, if model still have infected cases, it will change the law, and when infected cases don't exist, it will promulgate the freedom law so inhabitants can move around again.} 
-\\\\
-\includegraphics[width=0.68\textwidth]{complex_project_26}
+\end{pic25}
+\newline\newline
+\begin{pic26}
+\centering{\includegraphics[width=0.68\textwidth]{complex_project_26}}
 \\
-\caption{Figure 26: Exploration M3\_1, freedom again !.} 
-\\
+\centering{\caption{Figure 26: Exploration M3\_1, freedom again !.} }
+\end{pic26}
 \end{document}
 
 

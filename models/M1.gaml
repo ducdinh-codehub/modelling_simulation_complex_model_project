@@ -6,7 +6,7 @@
 */
 
 
-model model1
+model M1
 
 /* Insert your model definition here */
 // Each inhabitant have 2 building house and workingplace(random)

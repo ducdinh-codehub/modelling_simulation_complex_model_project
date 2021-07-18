@@ -6,7 +6,7 @@
 */
 
 
-model model4
+model M2_4
 
 /* Insert your model definition here */
 global{

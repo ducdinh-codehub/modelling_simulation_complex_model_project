@@ -6,7 +6,7 @@
 */
 
 
-model model5
+model M2_3
 
 /* Insert your model definition here */
 global{
@@ -20,16 +20,7 @@ global{
 	date starting_date <- date([2021,1,2,0,0,0]);
 	
 	int pandemic_duration <- 0;
-	int number_people_infected <- 50;
-	int number_of_virus <- 100;
-	int number_of_policy <- 4;
-	int policy_index <- 0;
-	list list_of_policy <- ["lockdown","lockage","lockschool","wearmask"];
-	
-	string law <- "freedom";
-	float infect_prop <- 0.0;
-	
-	int count_policy_date <- 0;
+	int number_people_infected <- 50; // number of people who have virus
 	
 	init{
 		create inhabitants number: number_of_inhabitant{
@@ -66,21 +57,8 @@ global{
 				is_female <- true;
 			}
 			
-			// Contain virus or not
-			/* 
-			rdInfected <- rnd(0,1);
-			if(rdInfected = 0){
-				//is_infected <- false;
-				epidemic_state <- "S";
-			}
-			if(rdInfected = 1){
-				is_exposed_state <- true;
-				is_susceptible_state <- false;
-				
-				my_color <- #gold;
-				epidemic_state <- "E";
-			}*/
 		}
+		
 		loop i from: 0 to: number_people_infected - 1{
 			ask one_of(inhabitants){
 				is_susceptible_state <- false;
@@ -89,6 +67,7 @@ global{
 				epidemic_state <- "E";
 			}
 		}
+		
 		create buildings from: buildings0_shape_file{
 			var <- [#darkgrey,#yellow,#green,#brown,#orange,#blue,#purple];
 			rdIndex <- rnd(0,6);
@@ -96,11 +75,12 @@ global{
 			if(my_color = #darkgrey){
 				is_building <- true;
 				if(have_people = false){
+					// Define people in building
 					int number_of_child <- rnd(0,3);
 					int number_of_male_adult <- 1;
 					int number_of_female_adult <- 1;
 					int number_of_grand_father <- 1;
-					int number_of_grand_mother <- 1;
+					int number_og_grand_mother <- 1;
 										
 					loop index from: 0 to: number_of_male_adult{
 						ask one_of(inhabitants where(each.is_adult = true and each.my_gender="male")){
@@ -136,7 +116,7 @@ global{
 						}
 					}
 					
-					loop index from: 0 to: number_of_grand_mother{
+					loop index from: 0 to: number_og_grand_mother{
 						ask one_of(inhabitants where(each.is_old = true and each.my_gender="female")){
 							if(self.location != myself.location and self.have_home = false){
 								self.location <- any_location_in(myself);
@@ -157,7 +137,7 @@ global{
 							}
 						}
 					}
-					nb_people <- number_of_child + number_of_male_adult + number_of_female_adult + number_of_grand_father + number_of_grand_mother;
+					nb_people <- number_of_child + number_of_male_adult + number_of_female_adult + number_of_grand_father + number_og_grand_mother;
 				}
 			}
 			else if(my_color = #yellow){
@@ -181,14 +161,6 @@ global{
 		}
 		create roads from: clean_roads0_shape_file;
 		do init_other_location();
-		create virus number: number_of_virus{
-			location <- any_location_in(one_of(roads));
-		}
-		create policies number: number_of_policy{
-			policy <- list_of_policy[policy_index];
-			policy_index <- policy_index + 1;
-		}
-		create local_authority number: 1;
 		road_graph <- as_edge_graph(roads);
 	}
 	
@@ -263,33 +235,29 @@ species inhabitants skills:[moving]{
 	int count_date_expose <- 0;
 	int count_date_infectious <- 0;
 	
-	reflex getLaw when: law !=nil{
-		write "Get law: "+law;
-	}
-	
 	// Adult schedule
-	reflex goToCoffeShop when: is_adult = true and current_date.hour = 6 and law != "lockdown"{
+	reflex goToCoffeShop when: (is_adult = true and current_date.hour = 6){
 		target <- any_location_in(coffeeLocation);
 		do goto target: target on: road_graph;
 	}
 	
-	reflex goToWork when: is_adult = true and current_date.hour = 7 and law != "lockdown"{
+	reflex goToWork when: (is_adult = true and current_date.hour = 7){
 		target <- any_location_in(workLocation);
 		do goto target: target on: road_graph;
 	}
 	
-	reflex adultGoShopping when: is_adult = true and current_date.hour = 17 and law != "lockdown"{
+	reflex adultGoShopping when: (is_adult = true and current_date.hour = 17){
 		target <- gorceryLocation;
 		do goto target: target on: road_graph;
 	}
 	
-	reflex goRestaurant when: is_adult = true and current_date.hour = 19 and law != "lockdown"{
+	reflex goRestaurant when: (is_adult = true and current_date.hour = 19){
 		target <- restaurantLocation;
 		do goto target: target on: road_graph;
 	}
 	
 	//Kid schedule
-	reflex goToSchool when: is_kid = true and current_date.hour = 7 and law != "lockdown"{
+	reflex goToSchool when: (is_kid = true and current_date.hour = 7){
 		target <- schoolLocation;
 		do goto target: target on: road_graph;
 		
@@ -298,7 +266,7 @@ species inhabitants skills:[moving]{
 		}
 	}
 	
-	reflex kidGoToPark when: is_kid = true and current_date.hour = 16 and not(xor(law != "lockdown",law != "lockschool")){
+	reflex kidGoToPark when: (is_kid = true and current_date.hour = 16){
 		target <- parkLocation;
 		do goto target: target on: road_graph;
 		
@@ -308,17 +276,17 @@ species inhabitants skills:[moving]{
 	}
 	
 	//Retire people/ old people
-	reflex oldPlpGoToPark when: is_old = true and (current_date.hour = 5 or current_date.hour = 16) and law != "lockdown"{
+	reflex oldPlpGoToPark when: (is_old = true and (current_date.hour = 5 or current_date.hour = 16)){
 		target <- parkLocation;
 		do goto target: target on: road_graph;
 	}
 	
-	reflex oldPlpGoShopping when: is_old = true and current_date.hour = 7 and law != "lockdown"{
+	reflex oldPlpGoShopping when: (is_old = true and current_date.hour = 7){
 		target <- gorceryLocation;
 		do goto target: target on: road_graph;
 	}
 	
-	reflex oldPlpGoHone when: is_old = true and current_date.hour = 10 and law != "lockdown"{
+	reflex oldPlpGoHone when: (is_old = true and current_date.hour = 10){
 		target <- houseLocation;
 		do goto target: target on: road_graph;
 	}
@@ -353,27 +321,16 @@ species inhabitants skills:[moving]{
 		count_date_infectious <- 0;
 	}
 
+	
 	reflex infect when:(epidemic_state = "I"){
 		ask inhabitants at_distance 3.0 {
-			if(infect_prop = 0.0){
-				if (self.epidemic_state = "S" ){
-					
-					self.is_susceptible_state <- false;
-					self.is_exposed_state <- true;
-					self.epidemic_state <- "E";
-					
-					self.my_color <- #gold;
-				}
-			}
-			else{
-				if (self.epidemic_state = "S" and flip(infect_prop)){
-					
-					self.is_susceptible_state <- false;
-					self.is_exposed_state <- true;
-					self.epidemic_state <- "E";
-					
-					self.my_color <- #gold;
-				}
+			if (self.epidemic_state = "S"){
+				
+				self.is_susceptible_state <- false;
+				self.is_exposed_state <- true;
+				self.epidemic_state <- "E";
+				
+				self.my_color <- #gold;
 			}
 		}
 	}
@@ -383,19 +340,10 @@ species inhabitants skills:[moving]{
 		list<inhabitants> list_colleague <- (inhabitants overlapping(my_location)) where(each.is_susceptible_state = true);
 		loop person over: list_colleague{
 			ask person{
-				if(infect_prop != 0){
-					if (flip(infect_prop)){
-						person.is_susceptible_state <- false;
-						person.is_exposed_state <- true;
-						epidemic_state <- "E";
-						person.my_color <- #gold;
-					}
-				}else{
-						person.is_susceptible_state <- false;
-						person.is_exposed_state <- true;
-						epidemic_state <- "E";
-						person.my_color <- #gold;
-				}
+				person.is_susceptible_state <- false;
+				person.is_exposed_state <- true;
+				epidemic_state <- "E";
+				person.my_color <- #gold;
 			}
 		}
 	}
@@ -447,106 +395,8 @@ species buildings{
 	bool is_gorcery <- false;
 	bool have_people <- flip(0.5);
 	int nb_people <- 0;
-	int nb_virus <- 0;
-	rgb old_color;
-	bool has_virus <- false;
-	//bool test <- true;
-	int count_life_time <- 0;
 	
-	reflex virus_load{
-		list<inhabitants> list_of_people <- (inhabitants overlapping(self));
-		loop person over: list_of_people{
-			if(person.is_infected_state = true){
-				//myself.old_color <- myself.my_color; 
-				//write "Detect infected people";
-				has_virus <- true;
-				nb_virus <- nb_virus + 1;
-				//test <- false;
-			}
-		}
-	}
 	
-	reflex infect when: has_virus = true{
-		list<inhabitants> list_of_people <- (inhabitants overlapping(self));
-		loop person over: list_of_people{
-			if(infect_prop = 0.0){
-				if(person.is_susceptible_state = true){
-					//myself.old_color <- myself.my_color; 
-					//write "Infected people";
-					
-					person.is_susceptible_state <- false;
-					person.is_exposed_state <- true;
-					person.epidemic_state <- "E";
-					
-					person.my_color <- #gold;
-					
-				}
-			}else{
-				if(person.is_susceptible_state = true and flip(infect_prop)){
-					//myself.old_color <- myself.my_color; 
-					//write "Infected people";
-					
-					person.is_susceptible_state <- false;
-					person.is_exposed_state <- true;
-					person.epidemic_state <- "E";
-					
-					person.my_color <- #gold;
-					
-				}
-			}
-		}
-	}
-	
-	reflex decrease_virus when: has_virus = true and count_life_time = 24{
-		//write "Decrease virus";
-		nb_virus <- max(0, nb_virus - 1);
-	}
-	
-	reflex death when: count_life_time = 48{
-		//write "virus dead";
-		nb_virus <- 0;
-	}
-	
-	reflex count_life_time when: has_virus = true{
-		if(count_life_time = 48){
-			count_life_time <- 0;
-		}
-		if(cycle mod 60 = 0){
-			count_life_time <- count_life_time + 1;
-		}
-	}
-	
-	reflex color_building {			
-		if (has_virus) {
-			my_color <- #black;
-		}
-		if (self.nb_virus = 0) {
-			has_virus <- false;
-			
-			if (is_building = true) {
-				my_color <- #darkgrey;
-			}			
-			if (is_workspace = true) {
-				my_color <- #yellow;
-			}	
-			if (is_park = true) {
-				my_color <- #green;
-			}	
-			if (is_coffeeshop = true) {
-				my_color <- #brown;
-			}	
-			if (is_restaurant = true) {
-				my_color <- #orange;
-			}			
-			if (is_school = true) {
-				my_color <- #blue;
-			}
-			if (is_gorcery = true) {
-				my_color <- #purple;
-			}
-		}
-	}
-			
 	//rgb my_color;
 	aspect goem{
 		draw shape color: my_color;
@@ -560,108 +410,12 @@ species roads{
 	}
 }
 
-species virus skills:[moving]{
-	
-	rgb my_color <- #red;
-	bool is_live <- true;
-	int count_life_time <- 0;
-	
-	reflex move{
-		do wander speed: 0.005;
-	}
-	
-	
-	reflex infect when: is_live = true{
-		ask inhabitants at_distance 3.0 {
-			if(infect_prop = 0.0){
-				if (self.epidemic_state = "S"){
-					
-					self.is_susceptible_state <- false;
-					self.is_exposed_state <- true;
-					self.epidemic_state <- "E";
-					
-					self.my_color <- #gold;
-				}
-			}else{
-				if (self.epidemic_state = "S" and flip(infect_prop)){
-					
-					self.is_susceptible_state <- false;
-					self.is_exposed_state <- true;
-					self.epidemic_state <- "E";
-					
-					self.my_color <- #gold;
-				}
-			}
-		}
-	}
-	// virus can life 3 days on the environment
-	reflex death when: count_life_time = 72{
-		is_live <- false;
-		my_color <- #black;
-		do die;
-	}
-	
-	reflex count_life_time when: is_live = true{
-		if(count_life_time = 72){
-			count_life_time <- 0;
-		}
-		if(cycle mod 60 = 0){
-			count_life_time <- count_life_time + 1;
-		}
-	}
-	
-	aspect goem{
-		draw triangle(4) color: my_color;
-	}
-}
-
-species local_authority{
-	reflex checkPolicyDate when: law != "freedom"{
-		if(count_policy_date >= 72){// 3 days for one policy 72 hours
-			law <- "freedom"; // Change to freedom state
-		}
-	}
-	reflex searchPolicy when: law = "freedom" and inhabitants count(each.is_infected_state = true) > 1{//Check, can we free all inhabitants ?
-		//if(inhabitants count(each.is_infected_state = true) > 1){  
-		// Promulgate law 
-		//when authority find infectious case in environment
-		write "INFECT CASE APPEAR-INFECT CASE APPEAR-INFECT CASE APPEAR-INFECT CASE APPEAR-INFECT CASE APPEAR";
-		ask one_of(policies){
-			//write("policy: "+self.policy);
-			law <- self.policy;
-			//law <- self.policy;
-		}
-		//}
-		if (law = "wearmask"){
-			infect_prop <- 0.5; //The propability of disease transmit when inhabitant wears mask
-		}
-		else{
-			infect_prop <- 0.0;
-		}
-	}
-	
-	reflex increasePolicyDuration when: law != "freedom"{// count law's duration
-		if(count_policy_date = 72){
-			count_policy_date <- 0;
-		}
-		if(cycle mod 60 = 0 and cycle != 0){
-			count_policy_date <- count_policy_date + 1;
-			write("count_policy_date: "+count_policy_date);
-		}
-	}
-}
-
-species policies{
-	string policy;
-}
-
-experiment M3_1{
+experiment M2_3{
 	output{
 		display map{
 			species buildings aspect:goem;
 			species roads aspect: goem;
 			species inhabitants aspect: goem;
-			species virus aspect: goem;
 		}
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
@@ -669,8 +423,7 @@ experiment M3_1{
 		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
 	}
 }
-
-experiment E3_1{
+experiment E2_2{
 	output{
 		display Population_gender {
 			chart "Population gender" type: histogram {
@@ -689,6 +442,16 @@ experiment E3_1{
 			}
 		}
 		
+		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
+		
+	}
+}
+
+experiment E2_3{
+	output{
 		display Epidemic_plotting {
 			chart "States of the agents" type: series style: line {
 				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.is_susceptible_state = true), inhabitants count (each.is_exposed_state = true), 
@@ -700,7 +463,6 @@ experiment E3_1{
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
 		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
-		
 		
 	}
 }

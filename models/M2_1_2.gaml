@@ -6,7 +6,7 @@
 */
 
 
-model model3
+model M2_1_2
 
 /* Insert your model definition here */
 global{
@@ -20,7 +20,7 @@ global{
 	date starting_date <- date([2021,1,2,0,0,0]);
 	
 	int pandemic_duration <- 0;
-	int number_people_infected <- 50; // number of people who have virus
+	int number_people_infected <- 30;
 	
 	init{
 		create inhabitants number: number_of_inhabitant{
@@ -57,16 +57,32 @@ global{
 				is_female <- true;
 			}
 			
+			// Contain virus or not
+			/* 
+			rdInfected <- rnd(0,1);
+			if(rdInfected = 0){
+				//is_infected <- false;
+				epidemic_state <- "S";
+			}
+			if(rdInfected = 1){
+				is_exposed_state <- true;
+				is_susceptible_state <- false;
+				
+				my_color <- #gold;
+				epidemic_state <- "E";
+			}*/
 		}
 		
 		loop i from: 0 to: number_people_infected - 1{
 			ask one_of(inhabitants){
-				is_susceptible_state <- false;
-				is_exposed_state <- true;
-				my_color <- #gold;
-				epidemic_state <- "E";
+				//write "i:" + i;
+				self.is_susceptible_state <- false;
+				self.is_exposed_state <- true;
+				self.my_color <- #gold;
+				self.epidemic_state <- "E";
 			}
 		}
+		
 		
 		create buildings from: buildings0_shape_file{
 			var <- [#darkgrey,#yellow,#green,#brown,#orange,#blue,#purple];
@@ -75,7 +91,6 @@ global{
 			if(my_color = #darkgrey){
 				is_building <- true;
 				if(have_people = false){
-					// Define people in building
 					int number_of_child <- rnd(0,3);
 					int number_of_male_adult <- 1;
 					int number_of_female_adult <- 1;
@@ -190,6 +205,7 @@ global{
 				}
 		}
 	}
+
 	reflex dd{
 		write current_date;
 		write current_date.hour;
@@ -213,7 +229,7 @@ species inhabitants skills:[moving]{
 	
 	bool have_home <- false;
 	
-	int rdInfected;
+	//int rdInfected;
 	
 	bool is_susceptible_state <- true;
 	bool is_infected_state <- false;
@@ -321,21 +337,7 @@ species inhabitants skills:[moving]{
 		count_date_infectious <- 0;
 	}
 
-	
 	reflex infect when:(epidemic_state = "I"){
-		ask inhabitants at_distance 3.0 {
-			if (self.epidemic_state = "S"){
-				
-				self.is_susceptible_state <- false;
-				self.is_exposed_state <- true;
-				self.epidemic_state <- "E";
-				
-				self.my_color <- #gold;
-			}
-		}
-	}
-	
-	reflex infect_in_one_building when:(epidemic_state = "I"){
 		buildings my_location <- first(buildings overlapping(self));
 		list<inhabitants> list_colleague <- (inhabitants overlapping(my_location)) where(each.is_susceptible_state = true);
 		loop person over: list_colleague{
@@ -395,6 +397,10 @@ species buildings{
 	bool is_gorcery <- false;
 	bool have_people <- flip(0.5);
 	int nb_people <- 0;
+	bool has_virus <- false;
+	int nb_virus <- 0;
+	
+	
 	
 	
 	//rgb my_color;
@@ -410,48 +416,14 @@ species roads{
 	}
 }
 
-experiment M2_3{
+experiment M2_2{
 	output{
 		display map{
 			species buildings aspect:goem;
 			species roads aspect: goem;
 			species inhabitants aspect: goem;
 		}
-		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
-		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
-		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
-		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
-	}
-}
-experiment E2_2{
-	output{
-		display Population_gender {
-			chart "Population gender" type: histogram {
-				datalist ["Male", "Female"] value:[length(inhabitants where(each.my_gender="male")), length(inhabitants where(each.my_gender="female"))];
-			}								
-		}
 		
-		display Population_by_age {
-			chart "Population by age" type: histogram {
-				datalist ["Childen", "Adults", "Old people"] 
-				value:[
-					   length(inhabitants where(3 <= each.my_age and each.my_age <= 21)),
-					   length(inhabitants where(22 <= each.my_age and each.my_age <= 55)), 
-					   length(inhabitants where(55 <= each.my_age and each.my_age <= 100))
-					  ];
-			}
-		}
-		
-		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
-		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
-		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
-		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
-		
-	}
-}
-
-experiment E2_3{
-	output{
 		display Epidemic_plotting {
 			chart "States of the agents" type: series style: line {
 				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.is_susceptible_state = true), inhabitants count (each.is_exposed_state = true), 
@@ -467,4 +439,31 @@ experiment E2_3{
 	}
 }
 
+experiment E2_1 type: gui{
+	parameter "Number of people: " var: number_of_inhabitant min:10 max: 1000 step: 10;
+	parameter "Number of infected people: " var: number_people_infected min: 5 max: 50 step: 10;
+	
+	init{
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::1];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::2];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::3];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::4];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::5];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::6];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::7];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::8];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::9];
+		create simulation with:[number_of_inhabitant::number_of_inhabitant,number_people_infected::number_people_infected,seed::10];
+	}
+	output{
+		display E1_1{
+			chart "Ch" type:series{
+				datalist ["#S", "#E", "#I", "#R"] value: [inhabitants count (each.epidemic_state = "S"), inhabitants count (each.epidemic_state = "E"), 
+														  inhabitants count (each.epidemic_state = "I"), inhabitants count (each.epidemic_state = "R")] 
+												  color: [#blue, #gold, #red, #lightblue];
+			}
+		}
+		
+	}
+}
 

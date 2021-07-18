@@ -1,2 +1,2 @@
-/home/duc/Documents/Gama/final_project/report/report.aux
-/home/duc/Documents/Gama/final_project/report/report.log
+./report/*.aux
+./report/*.log

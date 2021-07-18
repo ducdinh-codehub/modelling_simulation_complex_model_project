@@ -74,9 +74,8 @@ global{
 		}
 		
 		loop i from: 0 to: number_people_infected - 1{
-		write "number_people_infected: "+number_people_infected;
 			ask one_of(inhabitants){
-				write "i:" + i;
+				//write "i:" + i;
 				self.is_susceptible_state <- false;
 				self.is_exposed_state <- true;
 				self.my_color <- #gold;
@@ -432,10 +431,11 @@ experiment M2_2{
 												  color: [#blue, #gold, #red, #lightblue];
 			}
 		}
-		
-		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
-		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
+		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
+		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
+		
 	}
 }
 

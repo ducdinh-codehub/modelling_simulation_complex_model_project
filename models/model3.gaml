@@ -420,6 +420,7 @@ experiment M2_3{
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
 	}
 }
 experiment E2_2{
@@ -444,6 +445,7 @@ experiment E2_2{
 		monitor "nb susceptible people" value: inhabitants count(each.is_susceptible_state = true);
 		monitor "nb exposed people" value: inhabitants count(each.is_exposed_state = true);
 		monitor "nb infected people" value: inhabitants count(each.is_infected_state = true);
+		monitor "nb recovery people" value: inhabitants count(each.is_recovery_state = true);
 		
 	}
 }

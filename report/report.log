@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  19 JUL 2021 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.7)  19 JUL 2021 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2489,6 +2489,20 @@ Type  H <return>  for immediate help.
 l.1280 \end{pic22}
                   
 ? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1281 \newpage
+               
+? 
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.1281 \newpage
+               
+? 
+[41 </home/duc/Pictures/complex_project_21.png (PNG copy)> </home/duc/Pictures/
+complex_project_22.png (PNG copy)>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2499,20 +2513,6 @@ Type  H <return>  for immediate help.
 l.1283 \\
          - Create two new species: the LocalAuthority and the Policy.
 ? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1285 \\-
-           The policy can be trigger by time, infected inhabitants appear etc.
-? 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.1285 \\-
-           The policy can be trigger by time, infected inhabitants appear etc.
-? 
-[41 </home/duc/Pictures/complex_project_21.png (PNG copy)> </home/duc/Pictures/
-complex_project_22.png (PNG copy)>]
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
@@ -2772,7 +2772,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (46 pages, 8935746 bytes).
+Output written on report.pdf (46 pages, 8935724 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams

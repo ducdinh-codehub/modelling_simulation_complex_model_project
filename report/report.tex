@@ -4,20 +4,14 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox}
 \graphicspath{ {/home/duc/Pictures/} }
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
 \title{Report Modelling And Simulation Complex Model 2021
-        \linebreak
-        \\Subject:  spread of COVID-19 in a city and control policy}
-
-\linebreak\author{
+        \\[1\baselineskip]
+        Subject:  spread of COVID-19 in a city and control policy}
+\\[1\baselineskip]
+\author{
         Author: Duc Dinh Anh 
-        \\Email:    ducda.m20ict@st.usth.edu.vn
-        \\Mobile:   (+84) 982 086 651}
+        \\[1\baselineskip]Email:    ducda.m20ict@st.usth.edu.vn
+        \\[1\baselineskip]Mobile:   (+84) 982 086 651}
 
 \date{July 2021}
 
@@ -33,19 +27,18 @@
 \newpage
 \section{Spread of the disease}
 In this section, we want to discover the evolution of virus, beside we can track the steps of infectious process to see how and why virus can spread.
-\\
-\\
+\\[1\baselineskip]
 \underline{\textbf{#Model M1}}
 \\
-\underline{\emph{Strategy}}\\\\
+\underline{\emph{Strategy}}\\[1\baselineskip]
 We build this model base on the SEIR strategy which following states:\\
 - S: \textbf{Susceptible}, meaning the individual can be infected,\\
 - E: \textbf{Exposed}, meaning that the individual has been infected, nut cannot be infected other individuals,\\
 - I: \textbf{Infectious}, meaning that the individual has been infected and can infect other individuals,\\
-- R: \textbf{Recovered}, meaning that the individual has recovered from disease and cannot be infected anymore.\\\\
+- R: \textbf{Recovered}, meaning that the individual has recovered from disease and cannot be infected anymore.\\[1\baselineskip]
 - \textbf{*Note}: S individual will be infected by I individual. E will become I from three to seven day and I will become R from seven to ten day.
-\\\\
-\underline{\emph{Requirement}}\\\\
+\\[1\baselineskip]
+\underline{\emph{Requirement}}\\[1\baselineskip]
 - Implement population of species "Individuals" with an attribute for each epidemic state.\\
 - Each individual are moving randomly by using wander skill which is built in method of GAMA.\\ 
 - At each state, I individual infects one of S individual.\\
@@ -53,8 +46,9 @@ We build this model base on the SEIR strategy which following states:\\
 - Create mechanism that allow I individuals automatically change their  states to R.(Following the duration)\\
 - Displaying each individual with a circle and a colour depends on their state.\\
 - Creates 500 individuals and one infected individual in population, plot number of species in each states.
-\\\\
-\raggedright{\underline{\emph{Result}}}\\
+\\[1\baselineskip]
+\raggedright{\underline{\emph{Result}}}
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 global{	
@@ -76,7 +70,7 @@ global{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\\
+\\[1\baselineskip]
 - In the global agent I create some attributes to calibrate the parameter of model and there are:
 \\
 - number\_of\_people: allow me to add more individual.
@@ -86,8 +80,8 @@ global{
 - pandemic\_duration: counting the date of pandemic duration.
 \\
 - dangerous\_distance: Is the perfect distance for virus go inside susceptible individual.
+\\[1\baselineskip]
 \begin{tcolorbox}
-\\\\
 \begin{lstlisting}
 species individuals skills:[moving]{
 	bool is_infected <- false;
@@ -182,48 +176,46 @@ species individuals skills:[moving]{
 \\
 - "reflex dynamicTurnGood" and "reflex increaseInfectiousDate": These two actions connect to each other, the second action counts the date when an individual stays in I state, and it will automatically change to R state when the condition of the first action satisfies, that means the state of an individual will remain at I until it meets the end of the duration after that it will become R state.
 \\
-\begin{pic1}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_1}}
+\centering{\begin{pic1}}
+\includegraphics[width=0.70\textwidth]{complex_project_1}
 \\
 \caption{Figure 1: Simulation of model M1\_1, following the requirement 1 infected individual and 500 susceptible individuals.}
 \end{pic1}
-\\
-\begin{pic2}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_2}}
+\\[1\baselineskip]
+\centering{\begin{pic2}}
+\includegraphics[width=0.70\textwidth]{complex_project_2}
 \\
 \caption{Figure 2: Simulation of model M1\_1, after three days E individual turn to state I and start spreading desease to other individuals.}
 \end{pic2}
-\\\\
-\begin{pic3}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_3}}
+\centering{\begin{pic3}}
+\includegraphics[width=0.70\textwidth]{complex_project_3}
 \\
 \caption{Figure 3: Simulation of model M1\_1, all E individuals change to I state.}
 \end{pic3}
-\\\\
-\begin{pic4}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_4}}
+\\[1\baselineskip]
+\centering{\begin{pic4}}
+\includegraphics[width=0.70\textwidth]{complex_project_4}
 \\
 \caption{Figure 4: Simulation of model M1\_1, all E individuals become infected individual.}
 \end{pic4}
-\\\\
-\begin{pic5}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_5}}
+\centering{\begin{pic5}}
+\includegraphics[width=0.70\textwidth]{complex_project_5}
 \\
 \caption{Figure 5: Simulation of model M1\_1, all I individuals gradually chage to recovery individual.}
 \end{pic5}
-\\\\
-\begin{pic6}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_6}}
+\\[1\baselineskip]
+\centering{\begin{pic6}}
+\includegraphics[width=0.70\textwidth]{complex_project_6}
 \\
 \caption{Figure 6: Simulation of model M1\_1, number of individuals who have I state increase very fast.}
 \end{pic6}
 \newpage
-\underline{\emph{Exploration}}
-\newline\newline
+\raggedright\underline{\emph{Exploration}}
+\\[1\baselineskip]
 \underline{\textit{E1\_1. Effect of randomness:}}
 \\
 - Define a gui experiment, creating 10 experiments (with different seed values) and plot the evolution of the number of I individuals for each simulation.
-\newline\newline
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_1 type: gui{
@@ -275,33 +267,30 @@ experiment E1_1 type: gui{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\newline\newline
-\begin{doc}
+\\[1\baselineskip]
 - I design an experiment that can simulate ten simulations one time, and each simulation have different seed like the requirement. In this experiment I want to discover the evolution of each state base on the number of individual.
-\end{doc}
 \newpage
-\begin{pic7}
-\centering{\includegraphics[width=0.90\textwidth]{complex_project_7}}
+\centering{\begin{pic7}}
+\includegraphics[width=0.90\textwidth]{complex_project_7}
 \\
 \caption{Figure 7: Exploration E1\_1, ten experiments.}
 \end{pic7}
-\\\\
-\begin{pic8}
-\centering{\includegraphics[width=0.90\textwidth]{complex_project_8}}
+\\[1\baselineskip]
+\centering{\begin{pic8}}
+\includegraphics[width=0.90\textwidth]{complex_project_8}
 \\
 \caption{Figure 8: Exploration E1\_1, E cases increase, S cases decrease.}
 \end{pic8}
-\\
-\begin{pic9}
-\centering{\includegraphics[width=0.90\textwidth]{complex_project_9}}
+\centering{\begin{pic9}}
+\includegraphics[width=0.90\textwidth]{complex_project_9}
 \\
 \caption{Figure 9: Exploration E1\_1, I cases appear.}
 \end{pic9}
-\newline\newline
-\underline{\textit{E1\_2. Impact of the number of individuals.}}
+\\[1\baselineskip]
+\raggedright\underline{\textit{E1\_2. Impact of the number of individuals.}}
 \\
-Define a gui experiment, creating 11 experiments, with the same seed value but with a number of individuals from 200 to 2000 (with a step of 200) and plot the evolution of the number of I individuals.
-\newline\newline
+- Define a gui experiment, creating 11 experiments, with the same seed value but with a number of individuals from 200 to 2000 (with a step of 200) and plot the evolution of the number of I individuals.
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_2 type: gui{
@@ -377,23 +366,24 @@ experiment E1_2 type: gui{
 \end{tcolorbox}
 \newpage
 \\- I create 11 experiments which use the same seed and each experiment shows the number of people in four states, throw these experiment I can track the increase of people in four states, follow the instruction of requirement I create 200 to 2000 individuals to simulate the increase of people in each state and the increase step of number of people is 200.
-
-\begin{pic10}
-\centering{\includegraphics[width=0.90\textwidth]{complex_project_10}}
+\\[1\baselineskip]
+\centering{\begin{pic10}}
+\includegraphics[width=0.90\textwidth]{complex_project_10}
 \\
 \caption{Figure 10: Exploration E1\_2, eleven experiments use the same seed with the number of people from 200 to 2000.}
 \end{pic10}
 
 \newpage
 
-\underline{\textit{E1\_3. Impact of the number of individuals.}}
-Define 2 indicators:
-- the cycle of the maximum number of infected peoples.
+\raggedright\underline{\textit{E1\_3. Impact of the number of individuals.}}
+\\
+Define 2 indicators:\\
+- the cycle of the maximum number of infected peoples.\\
 - The duration of the epidemic (when the number of Exposed and Infected is
-0).
-Define a batch experiment plotting the evolution of these indicators in function
+0).\\
+- Define a batch experiment plotting the evolution of these indicators in function
 of the number of peoples. Save these values in a csv file.
-\newline\newline
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E1_3 type: 
@@ -418,20 +408,21 @@ and (individuals count(each.epidemic_state="E") = 0){
 }
 \end{lstlisting}
 \end{tcolorbox}
+\newpage
 \section{Spread in a city with a heterogeneous \\population}
 \\- In this model, we will simulate the process of spreading desease in real environment. Therefore, we need to create the diversity of individual's attribute which bases on the attribute of human for example age, gender, actvity etc.
-\newpage
+\\[1\baselineskip]
 \underline{\textbf{#Model M2\_1, M2\_2}}
-\\
+\\[1\baselineskip]
 \underline{\emph{Requirement}}
-\newline\newline
+\\[1\baselineskip]
 - Import shape file or randomly generate shape files (use open street map).
 - Building should have a type among: Home, office, school, shops, coffee, restaurant, park.
 - Can generate building randomly in GAMA at inisialisation.
 - Display the buildings with their own colour which bases on their type.
-\newline\newline
-\underline{\emph{Result}}\\
-\newline\newline
+\\[1\baselineskip]
+\underline{\emph{Result}}
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 global{
@@ -656,15 +647,15 @@ global{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\newline
-\newline- "create inhabitants number\_of\_inhabitant", "create buildings from: buildings0\_shape\_file", "create roads from: clean\_roads0\_shape\_file;": in global initialization I create three species which are inhabitants or individuals, buildings, roads. In inhabitans I add some attributes like age, gender. To create infected people I use a loop. Beside, I create the colour for each individual base on their age. the shape files are imported to both species, with road I use default information in the shape file but I need to modify and add some attributes of builfdings. After creating all inhabitans, I put inhabitant in the building and each building have four to seven people, buildings also have colour base on their type.
+\\[1\baselineskip]
+- "create inhabitants number\_of\_inhabitant", "create buildings from: buildings0\_shape\_file", "create roads from: clean\_roads0\_shape\_file;": in global initialization I create three species which are inhabitants or individuals, buildings, roads. In inhabitans I add some attributes like age, gender. To create infected people I use a loop. Beside, I create the colour for each individual base on their age. the shape files are imported to both species, with road I use default information in the shape file but I need to modify and add some attributes of builfdings. After creating all inhabitans, I put inhabitant in the building and each building have four to seven people, buildings also have colour base on their type.
 \\
-\begin{pic11}
-\centering{\includegraphics[width=0.90\textwidth]{complex_project_11}}
+\centering{\begin{pic11}}
+\includegraphics[width=0.90\textwidth]{complex_project_11}
 \\
 \caption{Figure 11: Exploration M2\_1, the city after importing the shape files, each building have their own colour base on their type, inhabitants are small circle with plenty of colout to distinguish the age of each inhabitant.} 
 \end{pic11}
-\\\\
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 species inhabitants skills:[moving]{
@@ -681,6 +672,10 @@ species inhabitants skills:[moving]{
 	bool is_male;
 	bool is_female;
 	bool have_home <- false;
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	bool is_susceptible_state <- true;
 	bool is_infected_state <- false;
 	bool is_exposed_state <- false;
@@ -689,10 +684,7 @@ species inhabitants skills:[moving]{
 	point houseLocation;
 	point workLocation;
 	point coffeeLocation;
-\end{lstlisting}
-\end{tcolorbox}
-\begin{tcolorbox}
-\begin{lstlisting}
+
 	point schoolLocation;
 	point parkLocation;
 	point restaurantLocation;
@@ -730,6 +722,10 @@ species inhabitants skills:[moving]{
 			target <- houseLocation;
 		}
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	reflex kidGoToPark when: (is_kid = true 
 	and current_date.hour = 16){
 		target <- parkLocation;
@@ -738,10 +734,6 @@ species inhabitants skills:[moving]{
 			target <- houseLocation;
 		}
 	}
-\end{lstlisting}
-\end{tcolorbox}
-\begin{tcolorbox}
-\begin{lstlisting}
 	//Retire people/ old people
 	reflex oldPlpGoToPark when: (is_old = true 
 	and (current_date.hour = 5 or current_date.hour = 16)){
@@ -775,6 +767,10 @@ species inhabitants skills:[moving]{
 		my_color <- #red;
 		count_date_infectious <- count_date_expose + 1;
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	reflex dynamicTurnGood when: 
 	(count_date_infectious >= 240) 
 	and (count_date_infectious <= 720) 
@@ -788,10 +784,6 @@ species inhabitants skills:[moving]{
 		count_date_expose <- 0;
 		count_date_infectious <- 0;
 	}
-\end{lstlisting}
-\end{tcolorbox}
-\begin{tcolorbox}
-\begin{lstlisting}
 	reflex infect when:(epidemic_state = "I"){
 		buildings my_location <- 
 		first(buildings overlapping(self));
@@ -826,6 +818,10 @@ species inhabitants skills:[moving]{
 		}
 		pandemic_duration <- count_date_infectious;
 	}
+\end{lstlisting}
+\end{tcolorbox}
+\begin{tcolorbox}
+\begin{lstlisting}
 	// End of the day
 	reflex goHone when: 
 	(target != nil and current_date.hour = 18) 
@@ -842,34 +838,35 @@ species inhabitants skills:[moving]{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\\- Each inhabitants have their own calendar so they can move every location that is chose in initalization section. I still use four action to describe the process of desease and they are "dynamicTurnBad", "dynamicTurnGood", "increaseExposeDate", "increaseInfectiousDate"; The different here is the action infect rather than infecting outside, in this model the virus will be transmitted inside a building which they live. Therefore I need to modify this action, first my model will find all the inhabitans who is susceptible inhabitant by using overlapping built-in function, second the process of transmitting desease start, all the inhabitants in the buiding which infected inhabitants stay will be infected.
+\raggedright- Each inhabitants have their own calendar so they can move every location that is chose in initalization section. I still use four action to describe the process of desease and they are "dynamicTurnBad", "dynamicTurnGood", "increaseExposeDate", "increaseInfectiousDate"; The different here is the action infect rather than infecting outside, in this model the virus will be transmitted inside a building which they live. Therefore I need to modify this action, first my model will find all the inhabitans who is susceptible inhabitant by using overlapping built-in function, second the process of transmitting desease start, all the inhabitants in the buiding which infected inhabitants stay will be infected.
+\\[1\baselineskip]
+\centering{\begin{pic12}}
+\includegraphics[width=0.68\textwidth]{complex_project_12}
 \\
-\begin{pic12}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_12}}
-\\
-\caption{Figure 12: Exploration M2\_1 + M2\_2, some individuals with purple colour are moving outside.} 
+\caption{Figure 12: Exploration M2\_1, 2, purple inhabitants are moving.} 
 \end{pic12}
 \\
-\begin{pic13}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_13}}
+\centering{\begin{pic13}}
+\includegraphics[width=0.68\textwidth]{complex_project_13}
 \\
-\caption{Figure 13: Exploration M2\_1 + M2\_2, all inhabitants stay with the infected inhabitants become exposed inhabitants and they will become infected inhabitant after they reach the E duration(From 3 to 10 days).} 
+\caption{Figure 13: Exploration M2\_1, 2, all inhabitants with the susceptible state become exposed inhabitants, after that they will become infected inhabitant (From 3 to 10 days).} 
 \end{pic13}
+\\[1\baselineskip]
+\centering{\begin{pic14}}
+\includegraphics[width=0.68\textwidth]{complex_project_14}
 \\
-\begin{pic14}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_14}}
-\\
-\caption{Figure 14: Exploration M2\_1 + M2\_2, all exposed inhabitants become infected inhabitants.} 
+\caption{Figure 14: Exploration M2\_1, 2, all exposed inhabitants become infected inhabitants.} 
 \end{pic14}
 \\
-\begin{pic15}
+\centering{\begin{pic15}}
 \includegraphics[width=0.70\textwidth]{complex_project_15}
 \\
-\caption{Figure 15: Exploration M2\_1 + M2\_2, all infected inhabitants become recovery inhabitants after they reach the I duration(From 10 to 30 days).} 
+\caption{Figure 15: Exploration M2\_1, 2, all infected inhabitants become recovery inhabitants after they reach the duration(From 10 to 30 days).} 
 \begin{pic15}
 \newpage
-\underline{\textit{E2\_1. Effect of randomness:}}
+\raggedright\underline{\textit{E2\_1. Effect of randomness:}}
 \\- Following the requirement, I need to create an experiment which is as same as E1.1. In this experiment, I can track the increase of people in each state and also the speed of the process of spreading dease in real environment.
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_1 type: gui{
@@ -943,19 +940,20 @@ experiment E2_1 type: gui{
 \end{tcolorbox}
 \newpage
 \underline{\textbf{#Model M2\_3}}\\
-\newline\newline
+\\[1\baselineskip]
 \underline{\emph{Requirement}}
-\newline\newline
+\\[1\baselineskip]
 - Building contains a household. (Actually I do this model first and I reuse it to the M2\_1 and M2\_2 so you can see the initialization for household in both model)
 \\
 - Randomly choosing the role of each people in the household for example: father, mother, kid, grand mother, grand father.
 \\
 - Creating an agenda for each inhabitant who is living in the same house. (Follow the calendar of requirement).
-\newline\newline
+\\[1\baselineskip]
 \underline{\emph{Result}}\newline\newline
 \begin{tcolorbox}
 \begin{lstlisting}
 species inhabitants skills:[moving]{
+	etc..................
 	reflex infect when:(epidemic_state = "I"){
 		ask inhabitants at_distance 3.0 {
 			if (self.epidemic_state = "S"){
@@ -966,35 +964,18 @@ species inhabitants skills:[moving]{
 			}
 		}
 	}
-	experiment M2_3{
-	output{
-		display map{
-			species buildings aspect:goem;
-			species roads aspect: goem;
-			species inhabitants aspect: goem;
-		}
-		monitor "nb susceptible people" 
-		value: inhabitants count(
-		each.is_susceptible_state = true);
-		monitor "nb exposed people" 
-		value: inhabitants count(
-		each.is_exposed_state = true);
-		monitor "nb infected people" 
-		value: inhabitants count(
-		each.is_infected_state = true);
-		}
-	}
+	..................etc
 }
 \end{lstlisting}
 \end{tcolorbox}
 \newpage
 \\- I still use the source code of model M2\_1 and M2\_2 and the diffent is I add the new action which is infect action which allow the I inhabitans infect the S inhabitants when they have the same range of distance.
-\newline\newline
+\\[1\baselineskip]
 \underline{\emph{Exploration}}
-\newline\newline
+\\[1\baselineskip]
 \underline{\textit{E2\_2. Population characteristics.}}
 \\- Define a gui experiment, plotting (with histograms for example) the ratio male-female, the population distribution in terms of age and in terms on number of people.
-\newline\newline
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_2{
@@ -1038,22 +1019,23 @@ experiment E2_2{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\\
+\\[1\baselineskip]
 \\- In this exploration, the system will create gender histogram and also the age histogram. The gender histogram allows me to see how many female and male inhabitant in our model and the age histogram shows the number of people in each group of age and there are adult, old, kid.
-\\
-\begin{pic16}
-\centering{\includegraphics[width=0.65\textwidth]{complex_project_17}}
+\\[1\baselineskip]
+\centering{\begin{pic16}}
+\includegraphics[width=0.65\textwidth]{complex_project_17}
 \\
 \caption{Figure 16: Exploration E2\_2, graph of gender.} 
 \end{pic16}
 \\
-\begin{pic17}
-\centering{\includegraphics[width=0.65\textwidth]{complex_project_16}}
+\centering{\begin{pic17}}
+\includegraphics[width=0.65\textwidth]{complex_project_16}
 \\
 \caption{Figure 17: Exploration E2\_2, graph of age.} 
 \end{pic17}
 \newpage
 \underline{\textit{E2\_3. Epidemic plotting. Define an experiment to plot epidemic spread.}}
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 experiment E2_3{
@@ -1088,20 +1070,23 @@ experiment E2_3{
 \end{tcolorbox}
 \newpage
 \raggedright- To discover the epidemic I create an experiment which can count all the case in each state.
-\begin{pic18}
-\centering{\includegraphics[width=0.70\textwidth]{complex_project_18}}
+\\[1\baselineskip]
+\centering{\begin{pic18}}
+\includegraphics[width=0.70\textwidth]{complex_project_18}
 \\
 \caption{Figure 18: Exploration E2\_3, number of peoples in each state.} 
 \end{pic18}
-\newline\newline
-\underline{\textbf{#Model M2\_4}}
-\newline\newline
+\newpage
+\raggedright\underline{\textbf{#Model M2\_4}}
+\\[1\baselineskip]
 \underline{\emph{Requirement}}
-\\- Model can simulate the life circle of virus in the environment.
+\\[1\baselineskip]
+- Model can simulate the life circle of virus in the environment.
 \\- People can be infected even they don't contact with infected people.
 \\- Modify building which can load virus. The number of virus increase when infected people are in building and decrease over time.
-\newline\newline
-\underline{\emph{Result}}\\
+\\[1\baselineskip]
+\underline{\emph{Result}}
+\\[1\baselineskip]
 - In this model, I add one species and it is virus. Virus can life in the environment few days and it can infect people. rather than move function I use wander to describe the complex when viruses move around. To count the day of virus's life circle I create an action which count the day in viruses life circle. I also modify buildings species to make sure that can become the virus load.
 \begin{tcolorbox}
 \begin{lstlisting}
@@ -1245,48 +1230,48 @@ species buildings{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\newline\newline
 
-\begin{pic19}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_19}}
+
+\centering{\begin{pic19}}
+\includegraphics[width=0.68\textwidth]{complex_project_19}
 \\
 \caption{Figure 19: Exploration M2\_4, a triangle is the virus in the environment.} 
 \end{pic19}
-\\
+\\[1\baselineskip]
 \begin{pic20}
 \centering{\includegraphics[width=0.68\textwidth]{complex_project_20}}
 \\
 \caption{Figure 20: Exploration M2\_4, E inhabitants become I inhabitants and the places where become black colour that means infected inhabitant went to these places.} 
 \end{pic20}
 \newpage
-\underline{\emph{Exploration}}
-\newline\newline
+\raggedright\underline{\emph{Exploration}}
+\\[1\baselineskip]
 \underline{\textit{E2\_4. comparing the disease spread with and without environmental transmission.}}
 
-\raggedright- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3
+\raggedright- I want to compare this model with the M2\_3 model because they are almost the same excepts the environment spred of M2\_4. I use the same experiment with M2\_3 which are E2\_3.
 \\
 \raggedright- The speed and also the number of people in exploration of M2\_4 is clearly higher than the number in exploration of M2\_5, the reason is in the model M2\_4 we have the feature that allows virus can be transmitted in the environment so it enhances the number of exposed inhabitant very fast.
-\\\\
-\begin{pic21}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_21}}
+\\[1\baselineskip]
+\centering{\begin{pic21}}
+\includegraphics[width=0.68\textwidth]{complex_project_21}
 \\
 \caption{Figure 21: Exploration E2\_3, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the fifth day.} 
 \end{pic21}
-\\\\
-\begin{pic22}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_22}}
+\\[1\baselineskip]
+\centering{\begin{pic22}}
+\includegraphics[width=0.68\textwidth]{complex_project_22}
 \\
 \caption{Figure 22: Exploration E2\_4, the date is displayed on the console, it shows that the number of exposed habitants starts increasing from the second day, it also increases very fast because of environmental transmission feature.} 
 \end{pic22}
 \newpage
-\section{Public health policy}
+\raggedright\section{Public health policy}
 \\- Create two new species: the LocalAuthority and the Policy.
 \\- LocalAuthority decides the policy.
 \\- The policy can be trigger by time, infected inhabitants appear etc.
 \\- The policy is listed in the requirement.
-\newline\newline
+\\[1\baselineskip]
 \underline{\emph{Result}}
-\newline\newline
+\\[1\baselineskip]
 \begin{tcolorbox}
 \begin{lstlisting}
 global{
@@ -1380,30 +1365,31 @@ experiment M3_1{
 }
 \end{lstlisting}
 \end{tcolorbox}
-\\ - I add two new species which are local\_authority and policies, polices contain all the laws in the list\_of\_policy. Beside, the local\_authority choose the suitable law, the decision of this species is based on the number of infected case when the number of infected case is higher than one local\_authority will promulgate the law, to control the date of the law I create the action which start counting the date when the law is executed. I also modify the action of inhabitants species so that they can execute action base on the global variable law.
+\\[1\baselineskip]
+- I add two new species which are local\_authority and policies, polices contain all the laws in the list\_of\_policy. Beside, the local\_authority choose the suitable law, the decision of this species is based on the number of infected case when the number of infected case is higher than one local\_authority will promulgate the law, to control the date of the law I create the action which start counting the date when the law is executed. I also modify the action of inhabitants species so that they can execute action base on the global variable law.
 \newpage
-\begin{pic23}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_23}}
+\centering{\begin{pic23}}
+\includegraphics[width=1.15\textwidth]{complex_project_23}
 \\
 \caption{Figure 23: Exploration M3\_1, all inhabitants get freedom law.} 
 \end{pic23}
-\newline\newline
-\begin{pic24}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_24}}
+\\[2\baselineskip]
+\centering{\begin{pic24}}
+\includegraphics[width=1.15\textwidth]{complex_project_24}
 \\
 \caption{Figure 24: Exploration M3\_1, all inhabitants get lockschool law when it finds out the infected case.} 
 \end{pic24}
-\newline\newline
-\begin{pic25}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_25}}
+\\[1\baselineskip]
+\centering{\begin{pic25}}
+\includegraphics[width=1.15\textwidth]{complex_project_25}
 \\
 \caption{Figure 25: Exploration M3\_1, after three days local\_authority will consider to change the law bases on the desease situation, if model still have infected cases, it will change the law, and when infected cases don't exist, it will promulgate the freedom law so inhabitants can move around again.} 
 \end{pic25}
-\newline\newline
-\begin{pic26}
-\centering{\includegraphics[width=0.68\textwidth]{complex_project_26}}
+\\[2\baselineskip]
+\centering{\begin{pic26}}
+\includegraphics[width=1.15\textwidth]{complex_project_26}
 \\
-\centering{\caption{Figure 26: Exploration M3\_1, freedom again !.} }
+\caption{Figure 26: Exploration M3\_1, freedom again !}
 \end{pic26}
 \end{document}
 
